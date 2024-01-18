@@ -175,7 +175,7 @@ header {
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
   opacity: 0;
   transform: translateY(-500px);
   top: 70px;
@@ -554,7 +554,7 @@ header {
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
   opacity: 0;
   transform: translateY(-500px);
   top: 70px;
@@ -601,7 +601,7 @@ header {
   position: fixed;
   z-index: 10;
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: #1f1f1f;
   opacity: 0;
   transform: translateY(-500px);
   top: 70px;
@@ -826,14 +826,12 @@ main {
   line-height: 1;
   opacity: 0;
   transform: translateX(-800px);
-  /* Coloca el elemento fuera de la pantalla al inicio */
 }
 
 .text-configurador h1.show {
   opacity: 1;
   transform: translateX(0);
   transition: opacity 2s, transform 1s;
-  /* Puedes ajustar la duración de la opacidad aquí también */
 }
 
 .text-configurador h2 {
@@ -847,19 +845,16 @@ main {
   transition: opacity 0.5s, transform 0.5s;
 }
 
-/* Añade una nueva regla para animar la aparición de las letras */
 .text-configurador h2 div.show {
   opacity: 1;
   transform: translateY(0);
   animation: appearAnimation 0.5s ease-in-out;
 }
 
-/* Define la animación de aparición usando @keyframes */
 @keyframes appearAnimation {
   from {
     opacity: 0;
     transform: translateY(0);
-    /* Puedes ajustar la distancia de desplazamiento */
   }
 
   to {
@@ -943,7 +938,7 @@ main {
   color: #1a1a1a;
   cursor: pointer;
   position: relative;
-  transition: color 0.5s, transform 0.5s; /* Añade transición para la propiedad transform */
+  transition: color 0.5s, transform 0.5s; 
 }
 
 .buttons-configurador button::before {

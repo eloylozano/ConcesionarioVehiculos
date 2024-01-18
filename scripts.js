@@ -38,115 +38,165 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function handleHuracanHover() {
-  var huracanElement = document.getElementById("huracan");
-  var submenuHuracan = document.querySelector(".submenu-huracan");
 
-  huracanElement.addEventListener("mouseover", function () {
-    submenuHuracan.style.opacity = "1";
-    submenuHuracan.style.visibility = "visible";
+document.addEventListener("DOMContentLoaded", handleSupersportHover);
+function handleSupersportHover() {
+  var supersportElement = document.getElementById("supersport");
+  var submenuSupersport = document.querySelector(".submenu-supersport");
+
+  supersportElement.addEventListener("mouseover", function () {
+    submenuSupersport.style.opacity = "1";
+    submenuSupersport.style.visibility = "visible";
   });
 
-  huracanElement.addEventListener("mouseout", function () {
-    submenuHuracan.style.opacity = "0";
-    submenuHuracan.style.visibility = "hidden";
+  supersportElement.addEventListener("mouseout", function () {
+    submenuSupersport.style.opacity = "0";
+    submenuSupersport.style.visibility = "hidden";
   });
 
-  submenuHuracan.addEventListener("mouseover", function () {
-    submenuHuracan.style.opacity = "1";
-    submenuHuracan.style.visibility = "visible";
+  submenuSupersport.addEventListener("mouseover", function () {
+    submenuSupersport.style.opacity = "1";
+    submenuSupersport.style.visibility = "visible";
   });
 
-  submenuHuracan.addEventListener("mouseout", function () {
-    submenuHuracan.style.opacity = "0";
-    submenuHuracan.style.visibility = "hidden";
-  });
-}
-
-document.addEventListener("DOMContentLoaded", handleHuracanHover);
-
-function handleUrusHover() {
-  var urusElement = document.getElementById("urus");
-  var submenuUrus = document.querySelector(".submenu-urus");
-
-  urusElement.addEventListener("mouseover", function () {
-    submenuUrus.style.opacity = "1";
-    submenuUrus.style.visibility = "visible";
-  });
-
-  urusElement.addEventListener("mouseout", function () {
-    submenuUrus.style.opacity = "0";
-    submenuUrus.style.visibility = "hidden";
-  });
-
-  submenuUrus.addEventListener("mouseover", function () {
-    submenuUrus.style.opacity = "1";
-    submenuUrus.style.visibility = "visible";
-  });
-
-  submenuUrus.addEventListener("mouseout", function () {
-    submenuUrus.style.opacity = "0";
-    submenuUrus.style.visibility = "hidden";
+  submenuSupersport.addEventListener("mouseout", function () {
+    submenuSupersport.style.opacity = "0";
+    submenuSupersport.style.visibility = "hidden";
   });
 }
 
-document.addEventListener("DOMContentLoaded", handleUrusHover);
 
+document.addEventListener("DOMContentLoaded", handleStreetHover);
+function handleStreetHover() {
+  var streetElement = document.getElementById("street");
+  var submenuStreet = document.querySelector(".submenu-street");
 
-function handleSerieLimitadaHover() {
-  var serielimitadaElement = document.getElementById("serie-limitada");
-  var submenuserielimitada = document.querySelector(".submenu-serielimitada");
-
-  serielimitadaElement.addEventListener("mouseover", function () {
-    submenuserielimitada.style.opacity = "1";
-    submenuserielimitada.style.visibility = "visible";
+  streetElement.addEventListener("mouseover", function () {
+    submenuStreet.style.opacity = "1";
+    submenuStreet.style.visibility = "visible";
   });
 
-  serielimitadaElement.addEventListener("mouseout", function () {
-    submenuserielimitada.style.opacity = "0";
-    submenuserielimitada.style.visibility = "hidden";
+  streetElement.addEventListener("mouseout", function () {
+    submenuStreet.style.opacity = "0";
+    submenuStreet.style.visibility = "hidden";
   });
 
-  submenuserielimitada.addEventListener("mouseover", function () {
-    submenuserielimitada.style.opacity = "1";
-    submenuserielimitada.style.visibility = "visible";
+  submenuStreet.addEventListener("mouseover", function () {
+    submenuStreet.style.opacity = "1";
+    submenuStreet.style.visibility = "visible";
   });
 
-  submenuserielimitada.addEventListener("mouseout", function () {
-    submenuserielimitada.style.opacity = "0";
-    submenuserielimitada.style.visibility = "hidden";
-  });
-}
-
-document.addEventListener("DOMContentLoaded", handleSerieLimitadaHover);
-
-function handleConceptHover() {
-  var conceptElement = document.getElementById("concept");
-  var submenuConcept = document.querySelector(".submenu-concept");
-
-  conceptElement.addEventListener("mouseover", function () {
-    submenuConcept.style.opacity = "1";
-    submenuConcept.style.visibility = "visible";
-  });
-
-  conceptElement.addEventListener("mouseout", function () {
-    submenuConcept.style.opacity = "0";
-    submenuConcept.style.visibility = "hidden";
-  });
-
-  submenuConcept.addEventListener("mouseover", function () {
-    submenuConcept.style.opacity = "1";
-    submenuConcept.style.visibility = "visible";
-  });
-
-  submenuConcept.addEventListener("mouseout", function () {
-    submenuConcept.style.opacity = "0";
-    submenuConcept.style.visibility = "hidden";
+  submenuStreet.addEventListener("mouseout", function () {
+    submenuStreet.style.opacity = "0";
+    submenuStreet.style.visibility = "hidden";
   });
 }
 
-document.addEventListener("DOMContentLoaded", handleConceptHover);
+document.addEventListener("DOMContentLoaded", handleTouringHover);
+function handleTouringHover() {
+  var touringElement = document.getElementById("touring");
+  var submenuTouring = document.querySelector(".submenu-touring");
 
+  touringElement.addEventListener("mouseover", function () {
+    submenuTouring.style.opacity = "1";
+    submenuTouring.style.visibility = "visible";
+  });
+
+  touringElement.addEventListener("mouseout", function () {
+    submenuTouring.style.opacity = "0";
+    submenuTouring.style.visibility = "hidden";
+  });
+
+  submenuTouring.addEventListener("mouseover", function () {
+    submenuTouring.style.opacity = "1";
+    submenuTouring.style.visibility = "visible";
+  });
+
+  submenuTouring.addEventListener("mouseout", function () {
+    submenuTouring.style.opacity = "0";
+    submenuTouring.style.visibility = "hidden";
+  });
+}
+
+
+document.addEventListener("DOMContentLoaded", handleAdventureHover);
+function handleAdventureHover() {
+  var adventureElement = document.getElementById("adventure");
+  var submenuAdventure = document.querySelector(".submenu-adventure");
+
+  adventureElement.addEventListener("mouseover", function () {
+    submenuAdventure.style.opacity = "1";
+    submenuAdventure.style.visibility = "visible";
+  });
+
+  adventureElement.addEventListener("mouseout", function () {
+    submenuAdventure.style.opacity = "0";
+    submenuAdventure.style.visibility = "hidden";
+  });
+
+  submenuAdventure.addEventListener("mouseover", function () {
+    submenuAdventure.style.opacity = "1";
+    submenuAdventure.style.visibility = "visible";
+  });
+
+  submenuAdventure.addEventListener("mouseout", function () {
+    submenuAdventure.style.opacity = "0";
+    submenuAdventure.style.visibility = "hidden";
+  });
+}
+
+
+document.addEventListener("DOMContentLoaded", handleCustomHover);
+function handleCustomHover() {
+  var customElement = document.getElementById("custom");
+  var submenuCustom = document.querySelector(".submenu-custom");
+
+  customElement.addEventListener("mouseover", function () {
+    submenuCustom.style.opacity = "1";
+    submenuCustom.style.visibility = "visible";
+  });
+
+  customElement.addEventListener("mouseout", function () {
+    submenuCustom.style.opacity = "0";
+    submenuCustom.style.visibility = "hidden";
+  });
+
+  submenuCustom.addEventListener("mouseover", function () {
+    submenuCustom.style.opacity = "1";
+    submenuCustom.style.visibility = "visible";
+  });
+
+  submenuCustom.addEventListener("mouseout", function () {
+    submenuCustom.style.opacity = "0";
+    submenuCustom.style.visibility = "hidden";
+  });
+}
+
+document.addEventListener("DOMContentLoaded", handleScooterHover);
+function handleScooterHover() {
+  var scooterElement = document.getElementById("scooter");
+  var submenuScooter = document.querySelector(".submenu-scooter");
+
+  scooterElement.addEventListener("mouseover", function () {
+    submenuScooter.style.opacity = "1";
+    submenuScooter.style.visibility = "visible";
+  });
+
+  scooterElement.addEventListener("mouseout", function () {
+    submenuScooter.style.opacity = "0";
+    submenuScooter.style.visibility = "hidden";
+  });
+
+  submenuScooter.addEventListener("mouseover", function () {
+    submenuScooter.style.opacity = "1";
+    submenuScooter.style.visibility = "visible";
+  });
+
+  submenuScooter.addEventListener("mouseout", function () {
+    submenuScooter.style.opacity = "0";
+    submenuScooter.style.visibility = "hidden";
+  });
+}
 
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -178,73 +228,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function mostrarSubmenu() {
-  var superTrofeo = document.getElementById("superTrofeo");
-  var modelosAutomovilisticos = document.getElementById("modelosAutomovilisticos");
-  var experience = document.getElementById("experience");
-  var submenuSuperTrofeo = document.getElementById("submenu-superTrofeo");
-  var submenuModelosAutomovilisticos = document.getElementById("submenu-modelosAutomovilisticos");
-  var submenuExperience = document.getElementById("submenu-experience");
-
-  // Función para mostrar el submenu
-  function mostrar(submenu) {
-    submenu.style.display = "block";
-  }
-
-  // Función para ocultar el submenu
-  function ocultar(submenu) {
-    submenu.style.display = "none";
-  }
-
-  // Agregar eventos de mouseover para mostrar los submenus
-  superTrofeo.addEventListener("mouseover", function () {
-    mostrar(submenuSuperTrofeo);
-    ocultar(submenuModelosAutomovilisticos);
-    ocultar(submenuExperience);
-  });
-
-  modelosAutomovilisticos.addEventListener("mouseover", function () {
-    mostrar(submenuModelosAutomovilisticos);
-    ocultar(submenuSuperTrofeo);
-    ocultar(submenuExperience);
-  });
-
-  experience.addEventListener("mouseover", function () {
-    mostrar(submenuExperience);
-    ocultar(submenuSuperTrofeo);
-    ocultar(submenuModelosAutomovilisticos);
-  });
-
-  // Agregar eventos de mouseout para ocultar los submenus
-  superTrofeo.addEventListener("mouseout", function (e) {
-    if (!e.relatedTarget || !e.relatedTarget.closest("#superTrofeo, #submenu-superTrofeo")) {
-      ocultar(submenuSuperTrofeo);
-    }
-  });
-
-  modelosAutomovilisticos.addEventListener("mouseout", function (e) {
-    if (!e.relatedTarget || !e.relatedTarget.closest("#modelosAutomovilisticos, #submenu-modelosAutomovilisticos")) {
-      ocultar(submenuModelosAutomovilisticos);
-    }
-  });
-
-  experience.addEventListener("mouseout", function (e) {
-    if (!e.relatedTarget || !e.relatedTarget.closest("#experience, #submenu-experience")) {
-      ocultar(submenuExperience);
-    }
-  });
-}
-
-document.addEventListener("DOMContentLoaded", mostrarSubmenu);
-
-
 
 
 
 
 document.addEventListener("DOMContentLoaded", function () {
   var clientservice = document.getElementById("clientservice");
-  var submenu = document.getElementById("submenu-motorsport");
+  var submenu = document.getElementById("submenu-hrc");
   var header = document.getElementById("header");
   var beyond = document.getElementById("beyond");
   var motorsport = document.getElementById("motorsport");

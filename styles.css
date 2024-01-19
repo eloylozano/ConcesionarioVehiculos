@@ -690,10 +690,6 @@ main {
   transition: 1s ease;
 }
 
-.modelos-main h2{
-  color: #1a1a1a;
-}
-
 .hexagonos {
   display: flex;
 }
@@ -751,7 +747,6 @@ main {
 
 .nombres-slider-revuelto {
   display: block;
-  color: #1a1a1a;
 }
 
 .nombres-slider-revuelto h1 {
@@ -784,7 +779,6 @@ main {
   margin-left: 20px;
   font-size: 1.2em;
   font-weight: 100;
-  color: #1a1a1a;
 }
 
 .moreinfo,

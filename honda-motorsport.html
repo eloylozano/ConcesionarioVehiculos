@@ -227,25 +227,25 @@
         <div class="controles">
           <div class="hexagonos">
             <div id="btn-left" class="hexagonos-izq">
-              <img class="hexagono" src="/assets/images/hexagonoEmpty.png" width="50px">
-              <img class="hexagono-white" src="/assets/images/hexagonoFull.png" width="50px">
+              <img class="hexagono" src="/assets/images/hexagonoEmptyBlack.png" width="50px">
+              <img class="hexagono-white" src="/assets/images/hexagonoFullBlack.png" width="50px">
             </div>
             <div id="btn-right" class="hexagonos-der">
-              <img class="hexagono" src="/assets/images/hexagonoEmpty.png" width="50px">
-              <img class="hexagono-white" src="/assets/images/hexagonoFull.png" width="50px">
+              <img class="hexagono" src="/assets/images/hexagonoEmptyBlack.png" width="50px">
+              <img class="hexagono-white" src="/assets/images/hexagonoFullBlack.png" width="50px">
             </div>
           </div>
         </div>
         <div class="nombres-slider">
           <div class="nombres-slider-revuelto">
-            <h1>REVUELTO</h1>
+            <h1>CBR1000RR</h1>
             <p>FROM NOW ON</p>
           </div>
         </div>
         <div class="descubreModelos">
           <div class="moreinfo-container">
-            <img class="moreinfo" src="/assets/images/moreinfoEmpty.png" width="50px">
-            <img class="moreinfo-white" src="/assets/images/moreinfoFull.png" width="50px">
+            <img class="moreinfo" src="/assets/images/moreinfoBlackEmpty.png" width="50px">
+            <img class="moreinfo-white" src="/assets/images/moreinfoBlackFull.png" width="50px">
           </div>
           <div class="descubreModelos-txt">
             <h4>Descubre el modelo</h4>
@@ -272,15 +272,15 @@
           <div class="letter">O</div>
           <div class="letter">R</div>
         </h2>
-        <h1 class="show">CREAR TU REVUELTO</h1>
+        <h1 class="show">CREAR TU CBR1000RR</h1>
         <div class="hexagons">
           <img class="hexagon-empty" src="/assets/images/hexagonoEmptyBlack.png" width="60px">
           <img class="hexagon-full" src="/assets/images/hexagonoFullBlack.png" width="60px">
         </div>
         <div class="buttons-configurador">
-          <button class="default-button" onclick="changeBackground('revuelto', this)">Revuelto</button>
-          <button onclick="changeBackground('huracan', this)">Huracán</button>
-          <button onclick="changeBackground('urus', this)">Urus</button>
+          <button class="default-button" onclick="changeBackground('CBR1000RR', this)">CBR1000RR</button>
+          <button onclick="changeBackground('Africa Twin', this)">Africa Twin</button>
+          <button onclick="changeBackground('Gold Wing', this)">Gold Wing</button>
         </div>
       </div>
     </div>
@@ -401,10 +401,9 @@
 
   <script>
     const modelos = [
-      { nombre: "revuelto", descripcion: "FROM NOW ON" },
-      { nombre: "sterrato", descripcion: "BEYOND THE CONCRETE" },
-      { nombre: "urus", descripcion: "UNLOCK ANY ROAD" }
-      // Agrega más modelos según sea necesario
+      { nombre: "CBR1000RR", descripcion: "FROM NOW ON" },
+      { nombre: "africaTwin", descripcion: "BEYOND THE CONCRETE" },
+      { nombre: "goldWing", descripcion: "UNLOCK ANY ROAD" }
     ];
 
     let modeloActualIndex = 0;
@@ -440,15 +439,12 @@
       cambiarFondoYTexto();
     });
 
-    // Recargar la página al hacer clic en hexágonos
     document.querySelector('.hexagons').addEventListener('click', function () {
       location.reload();
     });
 
-    // Inicializar el fondo con el primer modelo
     cambiarFondoYTexto();
 
-    // Limpiar la transición después de que se complete
     document.querySelector(".modelos-main").addEventListener("transitionend", function () {
       this.style.transition = "";
     });

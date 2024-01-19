@@ -306,20 +306,20 @@ function changeBackground(model, button) {
   });
 
   switch (model) {
-    case "revuelto":
+    case "CBR1000RR":
       configuradorMain.style.backgroundImage =
-        "url(assets/images/ConfiguradorRevuelto.png)";
-      updateH1Content("REVUELTO");
+        "url(assets/images/configuradorCBR1000RR.jpg)";
+      updateH1Content("CBR1000RR");
       break;
-    case "huracan":
+    case "Africa Twin":
       configuradorMain.style.backgroundImage =
-        "url(assets/images/ConfiguradorHuracan.png)";
-      updateH1Content("HURACÁN");
+        "url(assets/images/configuradorafricatwin.jpg)";
+      updateH1Content("Africa Twin");
       break;
-    case "urus":
+    case "Gold Wing":
       configuradorMain.style.backgroundImage =
-        "url(assets/images/ConfiguradorUrus.png)";
-      updateH1Content("URUS");
+        "url(assets/images/configuradorgoldwing.jpg)";
+      updateH1Content("Gold Wing");
       break;
     default:
       break;

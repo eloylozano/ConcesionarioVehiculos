@@ -684,10 +684,14 @@ main {
   position: relative;
   overflow: hidden;
   height: 800px;
-  background-image: url(assets/images/slider_revuelto.jpg);
+  background-image: url(assets/images/slider_CBR1000RR.jpg);
   background-position: center top; 
   background-size: cover;
   transition: 1s ease;
+}
+
+.modelos-main h2{
+  color: #1a1a1a;
 }
 
 .hexagonos {
@@ -747,6 +751,7 @@ main {
 
 .nombres-slider-revuelto {
   display: block;
+  color: #1a1a1a;
 }
 
 .nombres-slider-revuelto h1 {
@@ -779,6 +784,7 @@ main {
   margin-left: 20px;
   font-size: 1.2em;
   font-weight: 100;
+  color: #1a1a1a;
 }
 
 .moreinfo,
@@ -803,7 +809,7 @@ main {
 .configurador-main {
   position: relative;
   background-size: 100%;
-  background-image: url(assets/images/ConfiguradorRevuelto.png);
+  background-image: url(assets/images/configuradorCBR1000RR.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   height: 699px;
@@ -821,7 +827,7 @@ main {
 }
 
 .text-configurador h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   width: 100%;
   line-height: 1;
   opacity: 0;
@@ -934,7 +940,7 @@ main {
   background-color: transparent;
   font-size: 1.1em;
   font-weight: 100;
-  padding: 0 70px 20px 0px;
+  padding: 0 42px 20px 0px;
   color: #1a1a1a;
   cursor: pointer;
   position: relative;

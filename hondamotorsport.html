@@ -15,7 +15,7 @@
     <nav class="nav-header">
       <ul class="nav-header-left">
         <li class="nav-header-left-logo" id="logo">
-          <a href="/index-es.html"><img src="/assets/images/logoHondaWhite.png" width="50px" alt="logo-lamborghini" /></a>
+          <a href="/hondamotorsport.html"><img src="/assets/images/logoHondaWhite.png" width="50px" alt="logo-lamborghini" /></a>
         </li>
         <li class="nav-header-text" id="modelos" onclick="marcado(this)">MODELOS</li>
         <li class="nav-header-text" id="beyond" onclick="marcado(this)">ACCESORIOS</li>
@@ -87,7 +87,7 @@
     </div>
     <div class="submenu-adventure">
       <ul>
-        <li><a href="/hondamotorsport/modelos/adventure/africatwin.html">AFRICA TWIN</a></li>
+        <li><a href="/hondamotorsport/modelos/adventure/africatwin.html"> TWIN</a></li>
         <li><a href="/hondamotorsport/modelos/adventure/XL750.html">XL750 TRANSALP</a></li>
         <li><a href="/hondamotorsport/modelos/adventure/X-ADV.html">X-ADV</a></li>
         <li><a href="/hondamotorsport/modelos/adventure/NC750X.html">NC750X</a></li>
@@ -238,20 +238,24 @@
           </div>
         </div>
         <div class="nombres-slider">
-          <div class="nombres-slider-revuelto">
-            <h1>CBR1000RR</h1>
+          <div class="nombres-slider-CBR1000RR-R">
+            <h1>CBR1000RR-R</h1>
             <p>NACIDA PARA CORRER</p>
           </div>
         </div>
         <div class="descubreModelos">
           <div class="moreinfo-container">
-            <img class="moreinfo" src="/assets/images/moreinfoEmpty.png" width="50px">
-            <img class="moreinfo-white" src="/assets/images/moreinfoFull.png" width="50px">
+            <a id="linkCBR1000RR-R" href="/hondamotorsport/modelos/supersport/CBR1000RR-R.html">
+              <img class="moreinfo" src="/assets/images/moreinfoEmpty.png" width="50px">
+              <img class="moreinfo-white" src="/assets/images/moreinfoFull.png" width="50px">
+            </a>
           </div>
           <div class="descubreModelos-txt">
             <h4>Descubre el modelo</h4>
           </div>
         </div>
+        
+        
       </div>
     </div>
     </div>
@@ -355,10 +359,12 @@
     </div>
   </footer>
   <style>
+
     .nombres-slider h1 {
       transform: translateY(0px);
       opacity: 0;
       transition: opacity 1s ease, transform 1s ease;
+      width: fit-content;
     }
 
     .nombres-slider p {
@@ -371,6 +377,7 @@
       opacity: 1;
       transform: translate(0px);
       animation: fromTop 1s ease-in-out;
+      width: fit-content;
     }
 
     .nombres-slider p.show {
@@ -399,57 +406,65 @@
       }
     }
   </style>
-
   <script>
-    const modelos = [
-      { nombre: "CBR1000RR", descripcion: "NACIDA PARA CORRER" },
-      { nombre: "africaTwin", descripcion: "LA PERFECCIÓN DEL VIAJE" },
-      { nombre: "goldWing", descripcion: "LA VERDADERA AVENTURA NUNCA TERMINA" }
-    ];
+  const modelos = [
+    { nombre: "CBR1000RR-R", descripcion: "NACIDA PARA CORRER", enlace: "/hondamotorsport/modelos/supersport/CBR1000RR-R.html" },
+    { nombre: "africaTwin", descripcion: "LA PERFECCIÓN DEL VIAJE", enlace: "/hondamotorsport/modelos/adventure/africatwin.html" },
+    { nombre: "goldWing", descripcion: "LA VERDADERA AVENTURA NUNCA TERMINA", enlace: "/hondamotorsport/modelos/touring/GL1800GOLD_WING.html" }
+  ];
 
-    let modeloActualIndex = 0;
+  let modeloActualIndex = 0;
 
-    function cambiarFondoYTexto() {
-      const modelosMain = document.querySelector(".modelos-main");
-      const h1 = document.querySelector(".nombres-slider-revuelto h1");
-      const descripcion = document.querySelector(".nombres-slider-revuelto p");
+  function cambiarFondoYTexto() {
+    const modelosMain = document.querySelector(".modelos-main");
+    const h1 = document.querySelector(".nombres-slider-CBR1000RR-R h1");
+    const descripcion = document.querySelector(".nombres-slider-CBR1000RR-R p");
 
-      modelosMain.style.transition = "background-image 2s ease";
-      modelosMain.style.backgroundImage = `url(/assets/images/slider_${modelos[modeloActualIndex].nombre}.jpg)`;
+    modelosMain.style.transition = "background-image 2s ease";
+    modelosMain.style.backgroundImage = `url(/assets/images/slider_${modelos[modeloActualIndex].nombre}.jpg)`;
 
-      h1.classList.remove("show");
+    h1.classList.remove("show");
+    descripcion.classList.remove("show");
 
-      descripcion.classList.remove("show");
+    setTimeout(() => {
+      h1.textContent = modelos[modeloActualIndex].nombre.toUpperCase();
+      descripcion.textContent = modelos[modeloActualIndex].descripcion;
 
-      setTimeout(() => {
-        h1.textContent = modelos[modeloActualIndex].nombre.toUpperCase();
-        descripcion.textContent = modelos[modeloActualIndex].descripcion;
+      h1.classList.add("show");
+      descripcion.classList.add("show");
+    }, 100);
 
-        h1.classList.add("show");
-        descripcion.classList.add("show");
-      }, 100);
+    // Obtiene el enlace del modelo actual y actualiza el href
+    const linkModeloActual = document.getElementById("linkCBR1000RR-R");
+    if (linkModeloActual) {
+      linkModeloActual.href = modelos[modeloActualIndex].enlace;
     }
+  }
 
-    document.getElementById("btn-left").addEventListener("click", function () {
-      modeloActualIndex = (modeloActualIndex - 1 + modelos.length) % modelos.length;
-      cambiarFondoYTexto();
-    });
-
-    document.getElementById("btn-right").addEventListener("click", function () {
-      modeloActualIndex = (modeloActualIndex + 1) % modelos.length;
-      cambiarFondoYTexto();
-    });
-
-    document.querySelector('.hexagons').addEventListener('click', function () {
-      location.reload();
-    });
-
+  document.getElementById("btn-left").addEventListener("click", function () {
+    modeloActualIndex = (modeloActualIndex - 1 + modelos.length) % modelos.length;
     cambiarFondoYTexto();
+  });
 
-    document.querySelector(".modelos-main").addEventListener("transitionend", function () {
-      this.style.transition = "";
-    });
-  </script>
+  document.getElementById("btn-right").addEventListener("click", function () {
+    modeloActualIndex = (modeloActualIndex + 1) % modelos.length;
+    cambiarFondoYTexto();
+  });
+
+  document.querySelector('.hexagons').addEventListener('click', function () {
+    location.reload();
+  });
+
+  cambiarFondoYTexto();
+
+  document.querySelector(".modelos-main").addEventListener("transitionend", function () {
+    this.style.transition = "";
+  });
+</script>
+
+
+
+
 
 </body>
 

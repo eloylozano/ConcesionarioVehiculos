@@ -649,6 +649,13 @@ body {
   scroll-behavior: smooth;
 }
 
+.main-adventure {
+  background-image: url(assets/images/wallpaperAdventure.jpg);
+  background-size: cover;
+  background-position-y: center ;
+  height: 100vh;
+}
+
 .main-custom {
   background-image: url(assets/images/wallpaperCustom.jpg);
   background-size: cover;

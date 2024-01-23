@@ -649,6 +649,13 @@ body {
   scroll-behavior: smooth;
 }
 
+.main-touring {
+  background-image: url(assets/images/wallpaperTouring.jpg);
+  background-size: cover;
+  background-position-y: center ;
+  height: 100vh;
+}
+
 .main-street {
   background-image: url(assets/images/wallpaperStreet01.jpg);
   background-size: cover;

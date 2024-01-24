@@ -1059,6 +1059,14 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+.CBR600R-info {
+  background-image: url(assets/images/CBR600R--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+
 .modelo-info {
   background-image: url(assets/images/modelo-text.jpg);
   background-size: cover;
@@ -1070,7 +1078,7 @@ body {
   position: relative;
   width: 500px;
   left: 67%;
-  top: 10%;
+  top: 8%;
   line-height: 1.8;
 }
 
@@ -1083,7 +1091,7 @@ body {
   position: relative;
   width: 500px;
   left: 12%;
-  top: 20%;
+  top: 16%;
   line-height: 1.8;
 }
 

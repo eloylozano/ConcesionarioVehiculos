@@ -1094,6 +1094,12 @@ body {
   height: 2834px;
 }
 
+.CBR650R-info {
+  background-image: url(assets/images/CBR650R--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
 
 .modelo-info {
   background-image: url(assets/images/modelo-text.jpg);

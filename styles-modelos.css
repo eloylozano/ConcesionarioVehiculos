@@ -643,7 +643,7 @@ header {
   cursor: pointer;
 }
 
-/* ---------------------------------------------------------------------------------- */
+/* ========================================================================================= */
 html,
 body {
   scroll-behavior: smooth;
@@ -1087,6 +1087,13 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+.CBR500R-info {
+  background-image: url(assets/images/CBR500R--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
 .CBR600R-info {
   background-image: url(assets/images/CBR600R--text.jpg);
   background-size: cover;
@@ -1280,7 +1287,7 @@ body {
   font-weight: 100;
 }
 
-/* ======================================================================================================= */
+/* ========================================================================================= */
 .footer-rrss {
   padding: 40px 170px 0;
   height: 10vh;

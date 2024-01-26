@@ -15,7 +15,7 @@
     <nav class="nav-header">
       <ul class="nav-header-left">
         <li class="nav-header-left-logo" id="logo">
-          <a href="/hondamotorsport.html"><img src="/assets/images/logoHondaWhite.png" width="50px" alt="logo-lamborghini" /></a>
+          <a href="/hondamotorsport.html"><img src="/assets/images/logoHondaWhite.png" width="50px" alt="logo-honda" /></a>
         </li>
         <li class="nav-header-text" id="modelos" onclick="marcado(this)">MODELOS</li>
         <li class="nav-header-text" id="beyond" onclick="marcado(this)">ACCESORIOS</li>
@@ -35,7 +35,6 @@
           <div class="icon-container">
             <img class="icon-smoke" src="/assets/images/logo-chat-smoke.png" width="30px" />
             <img class="icon-white" src="/assets/images/logo-chat-white.png" width="30px" />
-            
           </div>
         </li>
 
@@ -79,11 +78,11 @@
     </div>
     <div class="submenu-touring">
       <ul>
-          <li><a href="/hondamotorsport/modelos/supersport/NT1100.html">NT1100</a></li>
-          <li><a href="/hondamotorsport/modelos/supersport/GL1800GOLD_WING_TOUR.html">GL1800 GOLD WING TOUR</a>
-          </li>
+        <li><a href="/hondamotorsport/modelos/supersport/NT1100.html">NT1100</a></li>
+        <li><a href="/hondamotorsport/modelos/supersport/GL1800GOLD_WING_TOUR.html">GL1800 GOLD WING TOUR</a>
+        </li>
       </ul>
-  </div>
+    </div>
     <div class="submenu-adventure">
       <ul>
         <li><a href="/hondamotorsport/modelos/adventure/africatwin.html"> TWIN</a></li>
@@ -213,10 +212,13 @@
       <video src="/assets/videos/CBR600RR.mp4" autoplay muted loop></video>
       <div class="text-video">
         <h2>BACK TO THE FUTURE</h2>
-        <h1>HONDA CBR600RR</h1>
+        <h1>CBR600RR</h1>
         <div class="hexagons">
-          <img class="hexagon-empty" src="/assets/images/hexagonoEmpty.png" width="70px">
-          <img class="hexagon-full" src="/assets/images/hexagonoFull.png" width="70px">
+          <a href="/hondamotorsport/modelos/supersport/CBR600RR.html">
+            <img class="hexagon-empty" src="/assets/images/hexagonoEmpty.png" width="70px">
+            <img class="hexagon-full" src="/assets/images/hexagonoFull.png" width="70px">
+          </a>
+
         </div>
       </div>
     </div>
@@ -253,8 +255,8 @@
             <h4>Descubre el modelo</h4>
           </div>
         </div>
-        
-        
+
+
       </div>
     </div>
     </div>
@@ -329,8 +331,8 @@
             <li><a href="/https://www.facebook.com/HondaMotosES/?locale=es_ES" target="_blank"><img
                   src="/assets/images/logo-facebook.png" width="20px"></a></li>
 
-            <li><a href="/https://www.youtube.com/@hondamotosespana" target="_blank"><img src="/assets/images/logo-youtube.png"
-                  width="20px"></a></li>
+            <li><a href="/https://www.youtube.com/@hondamotosespana" target="_blank"><img
+                  src="/assets/images/logo-youtube.png" width="20px"></a></li>
 
             <li><a href="/https://twitter.com/HondaMotoES" target="_blank"><img src="/assets/images/logo-X.png"
                   width="20px"></a></li>
@@ -358,7 +360,6 @@
     </div>
   </footer>
   <style>
-
     .nombres-slider h1 {
       transform: translateY(0px);
       opacity: 0;
@@ -406,60 +407,60 @@
     }
   </style>
   <script>
-  const modelos = [
-    { nombre: "CBR1000RR-R", descripcion: "NACIDA PARA CORRER", enlace: "/hondamotorsport/modelos/supersport/CBR1000RR-R.html" },
-    { nombre: "africaTwin", descripcion: "LA PERFECCIÓN DEL VIAJE", enlace: "/hondamotorsport/modelos/adventure/africatwin.html" },
-    { nombre: "goldWing", descripcion: "LA VERDADERA AVENTURA NUNCA TERMINA", enlace: "/hondamotorsport/modelos/touring/GL1800GOLD_WING.html" }
-  ];
+    const modelos = [
+      { nombre: "CBR1000RR-R", descripcion: "NACIDA PARA CORRER", enlace: "/hondamotorsport/modelos/supersport/CBR1000RR-R.html" },
+      { nombre: "africaTwin", descripcion: "LA PERFECCIÓN DEL VIAJE", enlace: "/hondamotorsport/modelos/adventure/africatwin.html" },
+      { nombre: "goldWing", descripcion: "LA VERDADERA AVENTURA NUNCA TERMINA", enlace: "/hondamotorsport/modelos/touring/GL1800GOLD_WING.html" }
+    ];
 
-  let modeloActualIndex = 0;
+    let modeloActualIndex = 0;
 
-  function cambiarFondoYTexto() {
-    const modelosMain = document.querySelector(".modelos-main");
-    const h1 = document.querySelector(".nombres-slider-CBR1000RR-R h1");
-    const descripcion = document.querySelector(".nombres-slider-CBR1000RR-R p");
+    function cambiarFondoYTexto() {
+      const modelosMain = document.querySelector(".modelos-main");
+      const h1 = document.querySelector(".nombres-slider-CBR1000RR-R h1");
+      const descripcion = document.querySelector(".nombres-slider-CBR1000RR-R p");
 
-    modelosMain.style.transition = "background-image 2s ease";
-    modelosMain.style.backgroundImage = `url(/assets/images/slider_${modelos[modeloActualIndex].nombre}.jpg)`;
+      modelosMain.style.transition = "background-image 2s ease";
+      modelosMain.style.backgroundImage = `url(/assets/images/slider_${modelos[modeloActualIndex].nombre}.jpg)`;
 
-    h1.classList.remove("show");
-    descripcion.classList.remove("show");
+      h1.classList.remove("show");
+      descripcion.classList.remove("show");
 
-    setTimeout(() => {
-      h1.textContent = modelos[modeloActualIndex].nombre.toUpperCase();
-      descripcion.textContent = modelos[modeloActualIndex].descripcion;
+      setTimeout(() => {
+        h1.textContent = modelos[modeloActualIndex].nombre.toUpperCase();
+        descripcion.textContent = modelos[modeloActualIndex].descripcion;
 
-      h1.classList.add("show");
-      descripcion.classList.add("show");
-    }, 100);
+        h1.classList.add("show");
+        descripcion.classList.add("show");
+      }, 100);
 
-    // Obtiene el enlace del modelo actual y actualiza el href
-    const linkModeloActual = document.getElementById("linkCBR1000RR-R");
-    if (linkModeloActual) {
-      linkModeloActual.href = modelos[modeloActualIndex].enlace;
+      // Obtiene el enlace del modelo actual y actualiza el href
+      const linkModeloActual = document.getElementById("linkCBR1000RR-R");
+      if (linkModeloActual) {
+        linkModeloActual.href = modelos[modeloActualIndex].enlace;
+      }
     }
-  }
 
-  document.getElementById("btn-left").addEventListener("click", function () {
-    modeloActualIndex = (modeloActualIndex - 1 + modelos.length) % modelos.length;
+    document.getElementById("btn-left").addEventListener("click", function () {
+      modeloActualIndex = (modeloActualIndex - 1 + modelos.length) % modelos.length;
+      cambiarFondoYTexto();
+    });
+
+    document.getElementById("btn-right").addEventListener("click", function () {
+      modeloActualIndex = (modeloActualIndex + 1) % modelos.length;
+      cambiarFondoYTexto();
+    });
+
+    document.querySelector('.hexagons').addEventListener('click', function () {
+      location.reload();
+    });
+
     cambiarFondoYTexto();
-  });
 
-  document.getElementById("btn-right").addEventListener("click", function () {
-    modeloActualIndex = (modeloActualIndex + 1) % modelos.length;
-    cambiarFondoYTexto();
-  });
-
-  document.querySelector('.hexagons').addEventListener('click', function () {
-    location.reload();
-  });
-
-  cambiarFondoYTexto();
-
-  document.querySelector(".modelos-main").addEventListener("transitionend", function () {
-    this.style.transition = "";
-  });
-</script>
+    document.querySelector(".modelos-main").addEventListener("transitionend", function () {
+      this.style.transition = "";
+    });
+  </script>
 
 
 

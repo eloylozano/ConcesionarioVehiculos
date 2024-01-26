@@ -1074,6 +1074,7 @@ body {
   font-weight: 100;
   font-size: 2.5em;
 }
+
 .modelo-trailer {
   height: 100vh;
   display: flex;
@@ -1085,6 +1086,13 @@ body {
   width: 1200px;
   height: auto;
   box-shadow: 10px 5px 10px #bebebe;
+}
+
+.CB1000R-info {
+  background-image: url(assets/images/CB1000R--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
 }
 
 .CBR500R-info {

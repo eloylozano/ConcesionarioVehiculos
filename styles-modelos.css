@@ -1088,6 +1088,13 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+.CB750-info {
+  background-image: url(assets/images/CB750-text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
 .CB1000R-info {
   background-image: url(assets/images/CB1000R--text.jpg);
   background-size: cover;

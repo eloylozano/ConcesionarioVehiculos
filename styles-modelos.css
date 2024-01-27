@@ -1088,6 +1088,20 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+.CL500-info {
+  background-image: url(assets/images/CL500--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.CB500F-info {
+  background-image: url(assets/images/CB500F--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
 .CB500-info {
   background-image: url(assets/images/CB500--text.jpg);
   background-size: cover;

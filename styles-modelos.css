@@ -1088,8 +1088,15 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+.CMX500-info {
+  background-image: url(assets/images/CMX500--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
 .CMX1100-info {
-  background-image: url(assets/images/cmx1100--text.jpg);
+  background-image: url(assets/images/CMX1100--text.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;

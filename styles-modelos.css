@@ -1088,6 +1088,21 @@ body {
   box-shadow: 10px 5px 10px #bebebe;
 }
 
+
+.NC750X-info {
+  background-image: url(assets/images/NC750X--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.xadv-info {
+  background-image: url(assets/images/xadv--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
 .xl750-info {
   background-image: url(assets/images/xl750--text.jpg);
   background-size: cover;

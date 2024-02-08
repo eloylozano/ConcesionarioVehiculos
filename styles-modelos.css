@@ -1040,6 +1040,17 @@ body {
   margin-bottom: 300px;
 }
 
+.precio{
+  display: flex;
+  width: max-content;
+  padding: 10px 0 0 100px;
+  font-size: 2em;
+}
+
+.precio span{
+  margin-left: 20px;
+}
+
 .specs-video {
   display: flex;
 }
@@ -1086,6 +1097,13 @@ body {
   width: 1200px;
   height: auto;
   box-shadow: 10px 5px 10px #bebebe;
+}
+
+.cb500x-info {
+  background-image: url(assets/images/CB500x--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
 }
 
 .NX500-info {

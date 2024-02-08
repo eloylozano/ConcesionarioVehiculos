@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Honda NX500 Página Oficial</title>
+  <link rel="stylesheet" href="/styles-modelos.css" />
+  <script src="/scripts.js"></script>
+  <link rel="icon" href="/assets/images/logoHondaRed.png" />
+</head>
+
+<body>
+  <header id="header">
+    <nav class="nav-header">
+      <ul class="nav-header-left">
+        <li class="nav-header-left-logo" id="logo">
+          <a href="/hondamotorsport.html"><img src="/assets/images/logoHondaWhite.png" width="50px"
+              alt="logo-honda" /></a>
+        </li>
+        <li class="nav-header-text" id="modelos" onclick="marcado(this)">
+          MODELOS
+        </li>
+        <li class="nav-header-text" id="beyond" onclick="marcado(this)">
+          ACCESORIOS
+        </li>
+        <li class="nav-header-text" id="clientservice" onclick="marcado(this)">
+          SERVICIOS
+        </li>
+        <li class="nav-header-text" id="motorsport" onclick="marcado(this)">
+          HRC
+        </li>
+      </ul>
+      <ul class="nav-header-right">
+        <li class="nav-header-text" id="concesionarios" onclick="marcado(this)">
+          CONCESIONARIOS
+        </li>
+        <li class="nav-header-text" onclick="marcado(this)">CURSOS HIS</li>
+        <li class="img">
+          <div class="icon-container">
+            <img class="icon-smoke" src="/assets/images/logo-lupa-smokepng.png" width="30px" />
+            <img class="icon-white" src="/assets/images/logo-lupa-white.png" width="30px" />
+          </div>
+        </li>
+        <li class="img">
+          <div class="icon-container">
+            <img class="icon-smoke" src="/assets/images/logo-chat-smoke.png" width="30px" />
+            <img class="icon-white" src="/assets/images/logo-chat-white.png" width="30px" />
+          </div>
+        </li>
+
+        <li class="img">
+          <div class="icon-container">
+            <div class="barras" onclick="toggleBars()">
+              <div class="barra1"></div>
+              <div class="barra2"></div>
+              <div class="barra3"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="submenu-modelos" id="submenu-modelos">
+    <ul>
+      <li id="supersport">
+        <a href="/hondamotorsport/modelos/supersport.html">SUPER SPORT</a>
+      </li>
+      <li id="street">
+        <a href="/hondamotorsport/modelos/street.html">STREET</a>
+      </li>
+      <li id="touring">
+        <a href="/hondamotorsport/modelos/touring.html">TOURING</a>
+      </li>
+      <li id="adventure">
+        <a href="/hondamotorsport/modelos/adventure.html">ADVENTURE</a>
+      </li>
+      <li id="custom">
+        <a href="/hondamotorsport/modelos/custom.html">CUSTOM</a>
+      </li>
+      <li id="scooter">
+        <a href="/hondamotorsport/modelos/scooter.html">SCOOTER</a>
+      </li>
+    </ul>
+    <div class="submenu-supersport">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/supersport/CBR1000RR-R.html">CBR1000RR-R</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/supersport/CBR600RR.html">CBR600RR</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/supersport/CBR650R.html">CBR650R</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/supersport/CBR500R.html">CBR500R</a>
+        </li>
+      </ul>
+    </div>
+    <div class="submenu-street">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CB1000R.html">CB1000R</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CB750.html">CB750 HORNET</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CB650R.html">CB650R</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CB500.html">CB500 HORNET</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CB500F.html">CB500F</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/street/CL500.html">CL500</a>
+        </li>
+      </ul>
+    </div>
+    <div class="submenu-touring">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/touring/NT1100.html">NT1100</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/touring/goldwing.html">GL1800 GOLD WING TOUR</a>
+        </li>
+      </ul>
+    </div>
+    <div class="submenu-adventure">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/africatwin.html">AFRICA TWIN</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/XL750.html">XL750 TRANSALP</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/X-ADV.html">X-ADV</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/NC750X.html">NC750X</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/NX500.html">NX500</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure/CB500X.html">CB500X</a>
+        </li>
+      </ul>
+    </div>
+    <div class="submenu-custom">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/custom/CMX1100.html">CMX1100 REBEL</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/custom/CMX500.html">CMX500 REBEL</a>
+        </li>
+      </ul>
+    </div>
+    <div class="submenu-scooter">
+      <ul>
+        <li>
+          <a href="/hondamotorsport/modelos/scooter/FORZA_750.html">FORZA 750</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/scooter/ADV350.html">ADV350</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/scooter/FORZA_350.html">FORZA 350</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/scooter/FORZA_125.html">FORZA 125</a>
+        </li>
+        <li>
+          <a href="/hondamotorsport/modelos/scooter/PCX125.html">PCX125</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="submenu-servicios" id="submenu-servicios">
+    <ul>
+      <li>HONDA MAPIT</li>
+      <li>HONDA PLUS</li>
+      <li>HONDA SEGUROS</li>
+      <li>PLANT DE PROTECCION DE PAGOS</li>
+    </ul>
+  </div>
+  <div class="submenu-hrc" id="submenu-hrc">
+    <ul>
+      <li>MOTOGP</li>
+      <li>WORLDSBK</li>
+      <li>EWC</li>
+      <li>MXGP</li>
+      <li>RALLY</li>
+    </ul>
+  </div>
+
+  <div class="submenu-general" id="submenu-general">
+    <div class="columnas">
+      <div class="columna1">
+        <ul>
+          <li>PERSONALIZACIÓN</li>
+          <li>ACCESORIOS</li>
+          <li>SERVICIOS FINANCIEROS</li>
+          <li>WARRANTY EXTENSION</li>
+        </ul>
+      </div>
+      <div class="columna2">
+        <ul>
+          <li>DISEÑO</li>
+          <li>INNOVACIÓN Y EXCELENCIA</li>
+          <li>SOSTENIBILIDAD</li>
+          <li>HISTORIA</li>
+        </ul>
+      </div>
+      <div class="columna3">
+        <ul>
+          <li>PROGRAMAS DE PILOTAJE</li>
+          <li>LOUNGE</li>
+          <li>CLUB</li>
+          <li>NOTICIAS</li>
+          <li>PODCAST</li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="submenu-general-contenedores">
+      <div class="submenu-general-contenedor">
+        <div class="languajes">
+          <p>IDIOMA</p>
+          <ul>
+            <li>ENGLISH</li>
+            <li>ITALIAN</li>
+            <li>FRENCH</li>
+            <li style="color: #9e9e9e">SPANISH</li>
+            <li>GERMAN</li>
+            <li>CHINESE</li>
+            <li>JAPANESE</li>
+            <li>RUSSIAN</li>
+          </ul>
+        </div>
+      </div>
+      <div class="submenu-general-contenedor">
+        <div class="redes-sociales">
+          <p>REDES SOCIALES</p>
+          <ul>
+            <li>
+              <a href="/https://www.instagram.com/lamborghini/?hl=en" target="_blank"><img
+                  src="/assets/images/logo-instagram.png" width="20px" /></a>
+            </li>
+
+            <li>
+              <a href="/https://www.facebook.com/Lamborghini/" target="_blank"><img
+                  src="/assets/images/logo-facebook.png" width="20px" /></a>
+            </li>
+
+            <li>
+              <a href="/https://twitter.com/Lamborghini" target="_blank"><img src="/assets/images/logo-youtube.png"
+                  width="20px" /></a>
+            </li>
+
+            <li>
+              <a href="/https://twitter.com/Lamborghini" target="_blank"><img src="/assets/images/logo-X.png"
+                  width="20px" /></a>
+            </li>
+            <li>
+              <a href="/https://www.tiktok.com/@lamborghini?lang=en" target="_blank"><img
+                  src="/assets/images/logo-tiktok.png" width="20px" /></a>
+            </li>
+
+            <li>
+              <a href="/https://www.linkedin.com/company/automobili-lamborghini-s-p-a-/" target="_blank"><img
+                  src="/assets/images/logo-linkedin.png" width="20px" /></a>
+            </li>
+
+            <li>
+              <a href="/https://discord.com/invite/vet6ZBjpFd" target="_blank"><img
+                  src="/assets/images/logo-discord.png" width="20px" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="submenu-general-contenedor">
+        <div class="ajustes">
+          <p>AJUSTES</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main style="background-color: white">
+    <nav class="breadcrumb">
+      <ul>
+        <li><a href="/hondamotorsport.html">HOME</a></li>
+        <li>/</li>
+        <li>MODELOS</li>
+        <li>/</li>
+        <li>
+          <a href="/hondamotorsport/modelos/adventure.html">ADVENTURE</a>
+        </li>
+        <li>/</li>
+        <li><b>NX500</b></li>
+      </ul>
+    </nav>
+    <div class="modelo-main">
+      <video src="/assets/videos/NX500.mp4" autoplay muted loop></video>
+      <div class="text-video">
+        <div class="text-video-sup">
+          <h2>NUEVA EXPERIENCIA</h2>
+          <h1>NX500</h1>
+          <div class="hexagons">
+            <a href="#description">
+              <img class="hexagon-empty" src="/assets/images/hexagonoDownEmpty.png" width="70px" />
+              <img class="hexagon-full" src="/assets/images/hexagonoDownFull.png" width="70px" />
+            </a>
+          </div>
+        </div>
+        <div class="specs-video">
+          <div class="specs-video-left">
+            <table>
+              <thead>
+                <tr>
+                  <td>Potencia</td>
+                  <td>Velocidad máxima</td>
+                  <td>Cilindrada</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>47 CV</td>
+                  <td>180 km/h</td>
+                  <td>499 cc</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="specs-video-right">
+            <div class="vistas-modelos-hexagons">
+              <a href="#all-models" id="all-models-link">
+                <img class="hexagon-empty" src="/assets/images/hexagonoEmpty.png" width="60px" />
+                <img class="hexagon-full" src="/assets/images/hexagonoFull.png" width="60px" />
+              </a>
+            </div>
+            <div class="specs-configurador-txt">
+              <p>CONFIGURACIÓN</p>
+              <h2>Crea tu NX500</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modelo-trailer">
+      <a href="https://www.youtube.com/watch?v=q_70-M9fJh0" target="_blank"><video id="videoPlayer"
+          src="/assets/videos/NX500_01.mp4" autoplay muted loop></video></a>
+    </div>
+    <div class="NX500-info" id="description">
+      <div class="modelo-info-txt">
+        <h1>VISIÓN GENERAL</h1>
+        <p>
+          La Honda NX500 es una motocicleta de estilo adventure que combina la versatilidad de una moto para todo
+          terreno con la eficiencia y comodidad para el uso diario. Equipada con un motor monocilíndrico de cilindrada
+          media, la NX500 ofrece un equilibrio entre potencia y economía de combustible, perfecto para desplazamientos
+          urbanos y aventuras off-road.
+          <br>
+          <br>
+          Su diseño robusto y ágil permite enfrentar una variedad de terrenos con confianza, mientras que su ergonomía
+          está diseñada para brindar comodidad tanto para el piloto como para el pasajero en viajes largos. Con un
+          asiento cómodo y una posición de conducción erguida, la NX500 ofrece una experiencia de manejo relajada y
+          controlada, adaptándose a una amplia variedad de estaturas y estilos de conducción.
+        </p>
+      </div>
+
+      <div class="modelo-info-txt02">
+        <h1>ERGONOMÍA</h1>
+        <p>
+          La Honda NX500 está diseñada con una ergonomía que busca proporcionar comodidad y control en una variedad de
+          situaciones de conducción. Su posición de conducción erguida y relajada permite al piloto mantener una postura
+          cómoda durante viajes largos y en terrenos variados. El asiento es amplio y bien acolchado, brindando apoyo
+          adecuado para el piloto y el pasajero, y su diseño facilita llegar al suelo con facilidad, lo que resulta
+          beneficioso para una amplia gama de estaturas.
+          <br>
+          <br>
+          Los controles están estratégicamente ubicados y son de fácil acceso, lo que permite al piloto operar la moto
+          de manera intuitiva y cómoda. El manillar es ancho y ofrece una posición de agarre natural, lo que ayuda a
+          reducir la fatiga en las manos y los brazos durante viajes prolongados. Además, los reposapiés están
+          posicionados de manera que permiten una postura de conducción equilibrada y estable, tanto en carreteras
+          pavimentadas como en caminos off-road.
+        </p>
+      </div>
+
+      <div class="modelo-info-txt03" style="margin-top: -150px">
+        <h1>CONDUCCIÓN</h1>
+        <p>
+          La Honda NX500 ofrece una experiencia de conducción emocionante y versátil, adaptada para enfrentar una
+          variedad de condiciones y terrenos con confianza y control. Equipada con un motor de cilindrada media, la
+          NX500 ofrece un equilibrio entre potencia y eficiencia de combustible, lo que la hace adecuada tanto para
+          desplazamientos urbanos como para aventuras off-road.
+          <br>
+          <br>
+          Su chasis robusto y su suspensión ajustable proporcionan una conducción estable y cómoda, absorbiendo
+          eficazmente las irregularidades de la carretera y ofreciendo una sensación de control y seguridad al piloto.
+          La dirección ágil y la maniobrabilidad precisa hacen que la NX500 sea fácil de manejar en todo tipo de
+          terreno, desde carreteras pavimentadas hasta caminos sinuosos y accidentados.
+        </p>
+      </div>
+    </div>
+    <div class="modelo-specs" id="revuelto-specs">
+      <div class="specs-container">
+        <h1>ESPECIFICACIONES TÉCNICAS</h1>
+        <ul>
+          <li>
+            <span class="span-left">CILINDRADA</span>
+            <span class="span-right">499cm³ (30.4 pulgadas cúbicas)</span>
+          </li>
+          <li>
+            <span class="span-left">POTENCIA</span>
+            <span class="span-right">47 CV</span>
+          </li>
+          <li>
+            <span class="span-left">VELOCIDAD MÁXIMA</span>
+            <span class="span-right">180 km/h</span>
+          </li>
+          <li>
+            <span class="span-left">ACELERACIÓN 0-100 KM/H (0–62 MPH)</span>
+            <span class="span-right">5,5 s</span>
+          </li>
+          <li>
+            <span class="span-left">CONSUMO COMBINADO</span>
+            <span class="span-right">3,1 l/100km</span>
+          </li>
+          <li>
+            <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
+            <span class="span-right">80 g/km (WLTP)</span>
+          </li>
+        </ul>
+
+        <div class="button-more-specs">
+          <div class="descubreModelos">
+            <div class="moreinfo-container" id="moreInfoContainer">
+              <img class="moreinfo" src="/assets/images/moreinfoBlackEmpty.png" width="50px">
+              <img class="moreinfo-white" src="/assets/images/moreinfoBlackFull.png" width="50px">
+            </div>
+            <div class="descubreModelos-txt">
+              <h4>Ampliar todas las especificaciones técnicas</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hexagonCross-container" id="hexagonCrossContainer">
+      <img class="hexagonCrossFull" src="/assets/images/hexagonCrossFull.png" width="50px">
+    </div>
+
+    <div class="detailed-specs-container" id="detailedSpecsContainer">
+      <div class="detailed-specs">
+        <div class="detailed-specs-right">
+          <ul>
+            <h1>CONSUMO</h1>
+            <li>
+              <span class="span-left">CONSUMO COMBINADO *</span>
+              <span class="span-right">4,6 l/100km</span>
+            </li>
+            <li>
+              <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
+              <span class="span-right">89 g/km (WLTP)</span>
+            </li>
+
+            <h1>MOTOR</h1>
+            <li>
+              <span class="span-left">MOTOR DE COMBUSTIÓN INTERNA</span>
+              <span class="span-right">i2 DOHC 471 cc</span>
+            </li>
+            <li>
+              <span class="span-left">CILINDRADA</span>
+              <span class="span-right">471 cm³</span>
+            </li>
+            <li>
+              <span class="span-left">RELACIÓN DE COMPRESIÓN</span>
+              <span class="span-right">10.7:1</span>
+            </li>
+            <li>
+              <span class="span-left">POTENCIA MÁXIMA (KW/CV)</span>
+              <span class="span-right">48 CV a 8500 rpm</span>
+            </li>
+            <li>
+              <span class="span-left">PAR MÁXIMO</span>
+              <span class="span-right">43 Nm a 7000 rpm</span>
+            </li>
+            <li>
+              <span class="span-left">RELACIÓN PESO/POTENCIA</span>
+              <span class="span-right">2,89 kg/CV</span>
+            </li>
+            <li>
+              <span class="span-left">SISTEMA DE REFRIGERACIÓN</span>
+              <span class="span-right">Refrigeración por líquido</span>
+            </li>
+            <li>
+              <span class="span-left">EMISIONES</span>
+              <span class="span-right">89 g/km de CO2</span>
+            </li>
+
+            <h1>TRANSMISIÓN</h1>
+            <li>
+              <span class="span-left">TRANSMISIÓN</span>
+              <span class="span-right">CADENA</span>
+            </li>
+            <li>
+              <span class="span-left">CAJA DE CAMBIOS</span>
+              <span class="span-right">6 marchas</span>
+            </li>
+            <li>
+              <span class="span-left">EMBRAGUE</span>
+              <span class="span-right">Embrague húmedo multidisco</span>
+            </li>
+
+            <h1>PRESTACIONES</h1>
+            <li>
+              <span class="span-left">VELOCIDAD MÁXIMA</span>
+              <span class="span-right">>180 km/h</span>
+            </li>
+            <li>
+              <span class="span-left">ACELERACIÓN 0-100 KM/H (0-62 MPH)</span>
+              <span class="span-right">5,5 s</span>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="detailed-specs-right">
+          <ul>
+            <h1>CHASIS Y CARROCERÍA</h1>
+            <li>
+              <span class="span-left">CHASIS</span>
+              <span class="span-right">Chasis de aluminio de doble viga</span>
+            </li>
+            <li>
+              <span class="span-left">CARROCERÍA</span>
+              <span class="span-right">Carrocería aerodinámica de fibra de carbono, diseño optimizado</span>
+            </li>
+            <li>
+              <span class="span-left">AERODINÁMICA</span>
+              <span class="span-right">Sistema de alerón trasero activo para mejorar la estabilidad a altas
+                velocidades</span>
+            </li>
+
+            <h1>RUEDAS</h1>
+            <li>
+              <span class="span-left">LLANTAS DELANTERAS</span>
+              <span class="span-right">17 x 3,5 pulgadas</span>
+            </li>
+            <li>
+              <span class="span-left">LLANTAS TRASERAS</span>
+              <span class="span-right">17 x 6 pulgadas</span>
+            </li>
+            <li>
+              <span class="span-left">NEUMÁTICOS DELANTEROS</span>
+              <span class="span-right">120/70 ZR17</span>
+            </li>
+            <li>
+              <span class="span-left">NEUMÁTICOS TRASEROS</span>
+              <span class="span-right">180/55 ZR17</span>
+            </li>
+
+            <h1>SUSPENSIONES Y DIRECCIÓN</h1>
+            <li>
+              <span class="span-left">SISTEMA DE CONTROL</span>
+              <span class="span-right">Control de tracción, sistema de frenos ABS</span>
+            </li>
+            <li>
+              <span class="span-left">TIPO DE SUSPENSIÓN</span>
+              <span class="span-right">Horquillas delanteras invertidas, monoamortiguador trasero ajustable</span>
+            </li>
+            <li>
+              <span class="span-left">SISTEMA DE DIRECCIÓN</span>
+              <span class="span-right">Dirección precisa y ágil</span>
+            </li>
+
+            <h1>FRENOS</h1>
+            <li>
+              <span class="span-left">FRENOS</span>
+              <span class="span-right">Frenos de disco doble con pinzas radiales</span>
+            </li>
+            <li>
+              <span class="span-left">FRENOS (DELANTEROS)</span>
+              <span class="span-right">Discos de freno de 320 mm</span>
+            </li>
+            <li>
+              <span class="span-left">FRENOS (TRASEROS)</span>
+              <span class="span-right">Discos de freno de 220 mm</span>
+            </li>
+
+            <h1>SEGURIDAD</h1>
+            <li>
+              <span class="span-left">AIRBAGS</span>
+              <span class="span-right">No aplicable (motocicleta)</span>
+            </li>
+
+            <h1>MEDIDAS</h1>
+            <li>
+              <span class="span-left">LONGITUD</span>
+              <span class="span-right">2075 mm</span>
+            </li>
+            <li>
+              <span class="span-left">ANCHURA</span>
+              <span class="span-right">685 mm</span>
+            </li>
+            <li>
+              <span class="span-left">ALTURA</span>
+              <span class="span-right">1150 mm</span>
+            </li>
+            <li>
+              <span class="span-left">PESO EN SECO</span>
+              <span class="span-right">201 kg</span>
+            </li>
+            <li>
+              <span class="span-left">DISTRIBUCIÓN DEL PESO</span>
+              <span class="span-right">% 52/48</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
+      var moreInfoContainer = document.getElementById("moreInfoContainer");
+
+      moreInfoContainer.addEventListener("click", function () {
+        var detailedSpecsContainer = document.getElementById("detailedSpecsContainer");
+        var hexagonCrossContainer = document.getElementById("hexagonCrossContainer");
+
+        // Oculta los elementos
+        detailedSpecsContainer.style.display = "block";
+        hexagonCrossContainer.style.display = "block";
+
+        // Realiza el desplazamiento suave hacia la posición del elemento
+        hexagonCrossContainer.scrollIntoView({ behavior: "smooth" });
+      });
+
+      var hexagonContainer = document.getElementById("hexagonCrossContainer");
+
+      hexagonContainer.addEventListener("click", function () {
+        var detailedSpecsContainer = document.getElementById("detailedSpecsContainer");
+        var hexagonCrossContainer = document.getElementById("hexagonCrossContainer");
+        var revueltoSpecs = document.getElementById("revuelto-specs");
+
+        // Oculta los elementos
+        detailedSpecsContainer.style.display = "none";
+        hexagonCrossContainer.style.display = "none";
+
+        // Realiza el desplazamiento suave hacia la posición del elemento
+        revueltoSpecs.scrollIntoView({ behavior: "smooth" });
+      });
+    </script>
+
+  </main>
+  <footer>
+    <div class="footer-contenedor">
+      <div class="footer-rrss">
+        <section>
+          <ul>
+            <li>EMPRESA</li>
+            <li>EMPLEO</li>
+            <li>SOSTENIBILIDAD</li>
+            <li>AVISO LEGAL Y PRIVACIDAD</li>
+            <li>MAPA DEL SITIO</li>
+            <li>ACCESIBILIDAD</li>
+            <li>FINACIALS</li>
+            <li>CONTACTO</li>
+            <li>MEDIA CENTERS</li>
+            <li>CONFIGURACIÓN DE COOKIES</li>
+            <li>NEWSLETTER</li>
+          </ul>
+        </section>
+        <aside>
+          <ul>
+            <li><a href="/https://www.instagram.com/hondamotoses/" target="_blank"><img
+                  src="/assets/images/logo-instagram.png" width="20px"></a></li>
+
+            <li><a href="/https://www.facebook.com/HondaMotosES/?locale=es_ES" target="_blank"><img
+                  src="/assets/images/logo-facebook.png" width="20px"></a></li>
+
+            <li><a href="/https://www.youtube.com/@hondamotosespana" target="_blank"><img
+                  src="/assets/images/logo-youtube.png" width="20px"></a></li>
+
+            <li><a href="/https://twitter.com/HondaMotoES" target="_blank"><img src="/assets/images/logo-X.png"
+                  width="20px"></a></li>
+            <li><a href="/https://www.tiktok.com/@hondamotoses?lang=es" target="_blank"><img
+                  src="/assets/images/logo-tiktok.png" width="20px"></a></li>
+
+            <li><a href="/https://www.linkedin.com/company/honda-espa%C3%B1a?originalSubdomain=es" target="_blank"><img
+                  src="/assets/images/logo-linkedin.png" width="20px"></a></li>
+          </ul>
+        </aside>
+      </div>
+      <div class="condiciones">
+        <p class="footer-consumos">* Los valores de consumos y emisiones presentes en el sitio web se
+          refieren a
+          su IP geográfica. Dicho
+          valor podría diferir de la realidad si navega a través de una VPN o si la ubicación de su
+          proveedor
+          de Internet no es exacta. Si cree que no está geolocalizado correctamente, contacte con su
+          concesionario de referencia para obtener información válida en su territorio sobre consumos y
+          emisiones.</p>
+        <div class="footer-copyright">
+          <p>Copyright © 2023 Honda Motor</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

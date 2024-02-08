@@ -1047,8 +1047,13 @@ body {
   font-size: 2em;
 }
 
+.precio p{
+    font-weight: 100;
+}
+
 .precio span{
   margin-left: 20px;
+  font-weight: 400;
 }
 
 .specs-video {
@@ -1097,6 +1102,41 @@ body {
   width: 1200px;
   height: auto;
   box-shadow: 10px 5px 10px #bebebe;
+}
+
+.pcx125-info {
+  background-image: url(assets/images/pcx125--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.forza125-info {
+  background-image: url(assets/images/forza125--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.forza350-info {
+  background-image: url(assets/images/forza350--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.adv350-info {
+  background-image: url(assets/images/adv350--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
+}
+
+.forza750-info {
+  background-image: url(assets/images/forza750--text.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 2834px;
 }
 
 .cb500x-info {

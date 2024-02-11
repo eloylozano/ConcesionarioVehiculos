@@ -1,698 +1,787 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honda Forza 125 · Página Oficial</title>
+    <link rel="stylesheet" href="/styles-modelos.css" />
+    <script src="/scripts.js"></script>
+    <link rel="icon" href="/assets/images/logoHondaRed.png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Honda Forza 125 · Página Oficial</title>
-  <link rel="stylesheet" href="/styles-modelos.css" />
-  <script src="/scripts.js"></script>
-  <link rel="icon" href="/assets/images/logoHondaRed.png" />
-</head>
-
-<body>
-  <header id="header">
-    <nav class="nav-header">
-      <ul class="nav-header-left">
-        <li class="nav-header-left-logo" id="logo">
-          <a href="/hondamotorsport.html"><img src="/assets/images/logoHondaWhite.png" width="50px"
-              alt="logo-honda" /></a>
-        </li>
-        <li class="nav-header-text" id="modelos" onclick="marcado(this)">
-          MODELOS
-        </li>
-        <li class="nav-header-text" id="beyond" onclick="marcado(this)">
-          ACCESORIOS
-        </li>
-        <li class="nav-header-text" id="clientservice" onclick="marcado(this)">
-          SERVICIOS
-        </li>
-        <li class="nav-header-text" id="motorsport" onclick="marcado(this)">
-          HRC
-        </li>
-      </ul>
-      <ul class="nav-header-right">
-        <li class="nav-header-text" id="concesionarios" onclick="marcado(this)">
-          CONCESIONARIOS
-        </li>
-        <li class="nav-header-text" onclick="marcado(this)">CURSOS HIS</li>
-        <li class="img">
-          <div class="icon-container">
-            <img class="icon-smoke" src="/assets/images/logo-lupa-smokepng.png" width="30px" />
-            <img class="icon-white" src="/assets/images/logo-lupa-white.png" width="30px" />
-          </div>
-        </li>
-        <li class="img">
-          <div class="icon-container">
-            <img class="icon-smoke" src="/assets/images/logo-chat-smoke.png" width="30px" />
-            <img class="icon-white" src="/assets/images/logo-chat-white.png" width="30px" />
-          </div>
-        </li>
-
-        <li class="img">
-          <div class="icon-container">
-            <div class="barras" onclick="toggleBars()">
-              <div class="barra1"></div>
-              <div class="barra2"></div>
-              <div class="barra3"></div>
+  <body>
+    <header id="header">
+      <nav class="nav-header">
+        <ul class="nav-header-left">
+          <li class="nav-header-left-logo" id="logo">
+            <a href="/hondamotorsport.html"
+              ><img
+                src="/assets/images/logoHondaWhite.png"
+                width="50px"
+                alt="logo-honda"
+            /></a>
+          </li>
+          <li class="nav-header-text" id="modelos" onclick="marcado(this)">
+            MODELOS
+          </li>
+          <li class="nav-header-text" id="beyond" onclick="marcado(this)">
+            ACCESORIOS
+          </li>
+          <li
+            class="nav-header-text"
+            id="clientservice"
+            onclick="marcado(this)"
+          >
+            SERVICIOS
+          </li>
+          <li class="nav-header-text" id="motorsport" onclick="marcado(this)">
+            HRC
+          </li>
+        </ul>
+        <ul class="nav-header-right">
+          <li
+            class="nav-header-text"
+            id="concesionarios"
+            onclick="marcado(this)"
+          >
+            CONCESIONARIOS
+          </li>
+          <li class="nav-header-text" onclick="marcado(this)">CURSOS HIS</li>
+          <li class="img">
+            <div class="icon-container">
+              <img
+                class="icon-smoke"
+                src="/assets/images/logo-lupa-smokepng.png"
+                width="30px"
+              />
+              <img
+                class="icon-white"
+                src="/assets/images/logo-lupa-white.png"
+                width="30px"
+              />
             </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <div class="submenu-modelos" id="submenu-modelos">
-    <ul>
-      <li id="supersport">
-        <a href="/hondamotorsport/modelos/supersport.html">SUPER SPORT</a>
-      </li>
-      <li id="street">
-        <a href="/hondamotorsport/modelos/street.html">STREET</a>
-      </li>
-      <li id="touring">
-        <a href="/hondamotorsport/modelos/touring.html">TOURING</a>
-      </li>
-      <li id="adventure">
-        <a href="/hondamotorsport/modelos/adventure.html">ADVENTURE</a>
-      </li>
-      <li id="custom">
-        <a href="/hondamotorsport/modelos/custom.html">CUSTOM</a>
-      </li>
-      <li id="scooter">
-        <a href="/hondamotorsport/modelos/scooter.html">SCOOTER</a>
-      </li>
-    </ul>
-    <div class="submenu-supersport">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/supersport/CBR1000RR-R.html">CBR1000RR-R</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/supersport/CBR600RR.html">CBR600RR</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/supersport/CBR650R.html">CBR650R</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/supersport/CBR500R.html">CBR500R</a>
-        </li>
-      </ul>
-    </div>
-    <div class="submenu-street">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CB1000R.html">CB1000R</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CB750.html">CB750 HORNET</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CB650R.html">CB650R</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CB500.html">CB500 HORNET</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CB500F.html">CB500F</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/street/CL500.html">CL500</a>
-        </li>
-      </ul>
-    </div>
-    <div class="submenu-touring">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/touring/NT1100.html">NT1100</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/touring/goldwing.html">GL1800 GOLD WING TOUR</a>
-        </li>
-      </ul>
-    </div>
-    <div class="submenu-adventure">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/africatwin.html">AFRICA TWIN</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/XL750.html">XL750 TRANSALP</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/X-ADV.html">X-ADV</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/NC750X.html">NC750X</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/NX500.html">NX500</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/adventure/CB500X.html">CB500X</a>
-        </li>
-      </ul>
-    </div>
-    <div class="submenu-custom">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/custom/CMX1100.html">CMX1100 REBEL</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/custom/CMX500.html">CMX500 REBEL</a>
-        </li>
-      </ul>
-    </div>
-    <div class="submenu-scooter">
-      <ul>
-        <li>
-          <a href="/hondamotorsport/modelos/scooter/FORZA_750.html">FORZA 750</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/scooter/ADV350.html">ADV350</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/scooter/FORZA_350.html">FORZA 350</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/scooter/FORZA_125.html">FORZA 125</a>
-        </li>
-        <li>
-          <a href="/hondamotorsport/modelos/scooter/PCX125.html">PCX125</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+          </li>
+          <li class="img">
+            <div class="icon-container">
+              <img
+                class="icon-smoke"
+                src="/assets/images/logo-chat-smoke.png"
+                width="30px"
+              />
+              <img
+                class="icon-white"
+                src="/assets/images/logo-chat-white.png"
+                width="30px"
+              />
+            </div>
+          </li>
 
-  <div class="submenu-servicios" id="submenu-servicios">
-    <ul>
-      <li>HONDA MAPIT</li>
-      <li>HONDA PLUS</li>
-      <li>HONDA SEGUROS</li>
-      <li>PLANT DE PROTECCION DE PAGOS</li>
-    </ul>
-  </div>
-  <div class="submenu-hrc" id="submenu-hrc">
-    <ul>
-      <li>MOTOGP</li>
-      <li>WORLDSBK</li>
-      <li>EWC</li>
-      <li>MXGP</li>
-      <li>RALLY</li>
-    </ul>
-  </div>
-
-  <div class="submenu-general" id="submenu-general">
-    <div class="columnas">
-      <div class="columna1">
-        <ul>
-          <li>PERSONALIZACIÓN</li>
-          <li>ACCESORIOS</li>
-          <li>SERVICIOS FINANCIEROS</li>
-          <li>WARRANTY EXTENSION</li>
+          <li class="img">
+            <div class="icon-container">
+              <div class="barras" onclick="toggleBars()">
+                <div class="barra1"></div>
+                <div class="barra2"></div>
+                <div class="barra3"></div>
+              </div>
+            </div>
+          </li>
         </ul>
-      </div>
-      <div class="columna2">
-        <ul>
-          <li>DISEÑO</li>
-          <li>INNOVACIÓN Y EXCELENCIA</li>
-          <li>SOSTENIBILIDAD</li>
-          <li>HISTORIA</li>
-        </ul>
-      </div>
-      <div class="columna3">
-        <ul>
-          <li>PROGRAMAS DE PILOTAJE</li>
-          <li>LOUNGE</li>
-          <li>CLUB</li>
-          <li>NOTICIAS</li>
-          <li>PODCAST</li>
-        </ul>
-      </div>
-    </div>
-    <hr />
-    <div class="submenu-general-contenedores">
-      <div class="submenu-general-contenedor">
-        <div class="languajes">
-          <p>IDIOMA</p>
-          <ul>
-            <li>ENGLISH</li>
-            <li>ITALIAN</li>
-            <li>FRENCH</li>
-            <li style="color: #9e9e9e">SPANISH</li>
-            <li>GERMAN</li>
-            <li>CHINESE</li>
-            <li>JAPANESE</li>
-            <li>RUSSIAN</li>
-          </ul>
-        </div>
-      </div>
-      <div class="submenu-general-contenedor">
-        <div class="redes-sociales">
-          <p>REDES SOCIALES</p>
-          <ul>
-            <li>
-              <a href="/https://www.instagram.com/lamborghini/?hl=en" target="_blank"><img
-                  src="/assets/images/logo-instagram.png" width="20px" /></a>
-            </li>
-
-            <li>
-              <a href="/https://www.facebook.com/Lamborghini/" target="_blank"><img
-                  src="/assets/images/logo-facebook.png" width="20px" /></a>
-            </li>
-
-            <li>
-              <a href="/https://twitter.com/Lamborghini" target="_blank"><img src="/assets/images/logo-youtube.png"
-                  width="20px" /></a>
-            </li>
-
-            <li>
-              <a href="/https://twitter.com/Lamborghini" target="_blank"><img src="/assets/images/logo-X.png"
-                  width="20px" /></a>
-            </li>
-            <li>
-              <a href="/https://www.tiktok.com/@lamborghini?lang=en" target="_blank"><img
-                  src="/assets/images/logo-tiktok.png" width="20px" /></a>
-            </li>
-
-            <li>
-              <a href="/https://www.linkedin.com/company/automobili-lamborghini-s-p-a-/" target="_blank"><img
-                  src="/assets/images/logo-linkedin.png" width="20px" /></a>
-            </li>
-
-            <li>
-              <a href="/https://discord.com/invite/vet6ZBjpFd" target="_blank"><img
-                  src="/assets/images/logo-discord.png" width="20px" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="submenu-general-contenedor">
-        <div class="ajustes">
-          <p>AJUSTES</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <main style="background-color: white">
-    <nav class="breadcrumb">
+      </nav>
+    </header>
+    <div class="submenu-modelos" id="submenu-modelos">
       <ul>
-        <li><a href="/hondamotorsport.html">HOME</a></li>
-        <li>/</li>
-        <li>MODELOS</li>
-        <li>/</li>
-        <li>
+        <li id="supersport">
+          <a href="/hondamotorsport/modelos/supersport.html">SUPER SPORT</a>
+        </li>
+        <li id="street">
+          <a href="/hondamotorsport/modelos/street.html">STREET</a>
+        </li>
+        <li id="touring">
+          <a href="/hondamotorsport/modelos/touring.html">TOURING</a>
+        </li>
+        <li id="adventure">
+          <a href="/hondamotorsport/modelos/adventure.html">ADVENTURE</a>
+        </li>
+        <li id="custom">
+          <a href="/hondamotorsport/modelos/custom.html">CUSTOM</a>
+        </li>
+        <li id="scooter">
           <a href="/hondamotorsport/modelos/scooter.html">SCOOTER</a>
         </li>
-        <li>/</li>
-        <li><b>FORZA 125</b></li>
       </ul>
-    </nav>
-    <div class="modelo-main">
-      <video src="/assets/videos/Forza125.mp4" autoplay muted loop></video>
-      <div class="text-video">
-        <div class="text-video-sup">
-          <h2>NO RENUNCIES A NADA</h2>
-          <h1>Forza 125</h1>
-          <div class="hexagons">
-            <a href="#description">
-              <img class="hexagon-empty" src="/assets/images/hexagonoDownEmpty.png" width="70px" />
-              <img class="hexagon-full" src="/assets/images/hexagonoDownFull.png" width="70px" />
-            </a>
-            <div class="precio">
-              <p>Desde</p>
-              <span>5.350 €</span>
-            </div>
-          </div>
-        </div>
-        <div class="specs-video">
-          <div class="specs-video-left">
-            <table>
-              <thead>
-                <tr>
-                  <td>Potencia</td>
-                  <td>Velocidad máxima</td>
-                  <td>Cilindrada</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>15 CV</td>
-                  <td>90 km/h</td>
-                  <td>125 cc</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="specs-video-right">
-            <div class="vistas-modelos-hexagons">
-              <a href="#all-models" id="all-models-link">
-                <img class="hexagon-empty" src="/assets/images/hexagonoEmpty.png" width="60px" />
-                <img class="hexagon-full" src="/assets/images/hexagonoFull.png" width="60px" />
-              </a>
-            </div>
-            <div class="specs-configurador-txt">
-              <p>CONFIGURACIÓN</p>
-              <h2>Crea tu Forza</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modelo-trailer">
-      <a href="https://www.youtube.com/watch?v=bst0JvoMm3A" target="_blank"><video id="videoPlayer"
-          src="/assets/videos/Forza350_01.mp4" autoplay muted loop></video></a>
-    </div>
-    <div class="forza125-info" id="description">
-      <div class="modelo-info-txt">
-        <h1>VISIÓN GENERAL</h1>
-        <p>
-
-          La Honda Forza 125 es una scooter de gama media que combina estilo, rendimiento y funcionalidad para ofrecer
-          una experiencia de conducción emocionante y cómoda en entornos urbanos y más allá. Con un diseño elegante y
-          aerodinámico, la Forza 125 es ideal para aquellos que buscan un medio de transporte práctico y con estilo.
-          <br>
-          <br>
-          Equipada con un motor de 125 cc, la Forza 125 ofrece un equilibrio impresionante entre potencia y eficiencia
-          de combustible, lo que la hace perfecta para desplazamientos diarios y aventuras urbanas. Su transmisión
-          automática proporciona cambios suaves y sin esfuerzo, lo que simplifica la conducción y mejora la comodidad
-          del piloto.
-        </p>
-      </div>
-
-      <div class="modelo-info-txt02" style="margin-top: 50px">
-        <h1>ERGONOMÍA</h1>
-        <p>
-
-          La Honda Forza 125 ha sido diseñada pensando en la comodidad y la facilidad de uso del piloto durante todo
-          tipo de desplazamientos. Su ergonomía se centra en ofrecer una posición de conducción natural y relajada que
-          reduce la fatiga y aumenta la comodidad en trayectos largos y cortos.
-          <br>
-          <br>
-          El asiento de la Forza 125 es amplio y bien acolchado, proporcionando un excelente apoyo para el piloto y el
-          pasajero. Además, su altura y forma permiten que pilotos de diferentes estaturas puedan llegar fácilmente al
-          suelo, lo que aumenta la confianza y la seguridad al detenerse en semáforos o en situaciones de tráfico.
-        </p>
-      </div>
-
-      <div class="modelo-info-txt03" style="margin-top: 50px">
-        <h1>CONDUCCIÓN</h1>
-        <p>
-          La Honda Forza 125 ofrece una experiencia de conducción ágil y cómoda, perfecta para desplazamientos urbanos y
-          aventuras en carretera. Equipada con un motor de 125 cc, esta scooter proporciona un rendimiento suave y
-          eficiente, ideal para sortear el tráfico de la ciudad y viajes de corta a media distancia.
-          <br>
-          <br>
-          Su chasis ligero y bien equilibrado, junto con una suspensión bien ajustada, garantiza una conducción estable
-          y cómoda en una variedad de condiciones de la carretera. La dirección precisa y la maniobrabilidad ágil hacen
-          que la Forza 125 sea fácil de manejar, incluso en espacios reducidos y en situaciones de tráfico intenso.
-        </p>
-      </div>
-    </div>
-    <div class="modelo-specs" id="revuelto-specs">
-      <div class="specs-container">
-        <h1>ESPECIFICACIONES TÉCNICAS</h1>
+      <div class="submenu-supersport">
         <ul>
           <li>
-            <span class="span-left">CILINDRADA</span>
-            <span class="span-right">124.9 cm³</span>
+            <a href="/hondamotorsport/modelos/supersport/CBR1000RR-R.html"
+              >CBR1000RR-R</a
+            >
           </li>
           <li>
-            <span class="span-left">POTENCIA</span>
-            <span class="span-right">15 CV (22.6 kW) a 4,500 rpm</span>
+            <a href="/hondamotorsport/modelos/supersport/CBR600RR.html"
+              >CBR600RR</a
+            >
           </li>
           <li>
-            <span class="span-left">VELOCIDAD MÁXIMA</span>
-            <span class="span-right">90 km/h</span>
+            <a href="/hondamotorsport/modelos/supersport/CBR650R.html"
+              >CBR650R</a
+            >
           </li>
           <li>
-            <span class="span-left">CONSUMO COMBINADO</span>
-            <span class="span-right">2,6</span>
-          </li>
-          <li>
-            <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
-            <span class="span-right">57g/km</span>
+            <a href="/hondamotorsport/modelos/supersport/CBR500R.html"
+              >CBR500R</a
+            >
           </li>
         </ul>
-        <div class="button-more-specs">
-          <div class="descubreModelos">
-            <div class="moreinfo-container" id="moreInfoContainer">
-              <img class="moreinfo" src="/assets/images/moreinfoBlackEmpty.png" width="50px">
-              <img class="moreinfo-white" src="/assets/images/moreinfoBlackFull.png" width="50px">
-            </div>
-            <div class="descubreModelos-txt">
-              <h4>Ampliar todas las especificaciones técnicas</h4>
-            </div>
+      </div>
+      <div class="submenu-street">
+        <ul>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CB1000R.html">CB1000R</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CB750.html"
+              >CB750 HORNET</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CB650R.html">CB650R</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CB500.html"
+              >CB500 HORNET</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CB500F.html">CB500F</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/street/CL500.html">CL500</a>
+          </li>
+        </ul>
+      </div>
+      <div class="submenu-touring">
+        <ul>
+          <li>
+            <a href="/hondamotorsport/modelos/touring/NT1100.html">NT1100</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/touring/goldwing.html"
+              >GL1800 GOLD WING TOUR</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="submenu-adventure">
+        <ul>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/africatwin.html"
+              >AFRICA TWIN</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/XL750.html"
+              >XL750 TRANSALP</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/X-ADV.html">X-ADV</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/NC750X.html">NC750X</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/NX500.html">NX500</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/adventure/CB500X.html">CB500X</a>
+          </li>
+        </ul>
+      </div>
+      <div class="submenu-custom">
+        <ul>
+          <li>
+            <a href="/hondamotorsport/modelos/custom/CMX1100.html"
+              >CMX1100 REBEL</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/custom/CMX500.html"
+              >CMX500 REBEL</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="submenu-scooter">
+        <ul>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter/FORZA_750.html"
+              >FORZA 750</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter/ADV350.html">ADV350</a>
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter/FORZA_350.html"
+              >FORZA 350</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter/FORZA_125.html"
+              >FORZA 125</a
+            >
+          </li>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter/PCX125.html">PCX125</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="submenu-servicios" id="submenu-servicios">
+      <ul>
+        <li>HONDA MAPIT</li>
+        <li>HONDA PLUS</li>
+        <li>HONDA SEGUROS</li>
+        <li>PLANT DE PROTECCION DE PAGOS</li>
+      </ul>
+    </div>
+    <div class="submenu-hrc" id="submenu-hrc">
+      <ul>
+        <li>MOTOGP</li>
+        <li>WORLDSBK</li>
+        <li>EWC</li>
+        <li>MXGP</li>
+        <li>RALLY</li>
+      </ul>
+    </div>
+
+    <div class="submenu-general" id="submenu-general">
+      <div class="columnas">
+        <div class="columna1">
+          <ul>
+            <li>PERSONALIZACIÓN</li>
+            <li>ACCESORIOS</li>
+            <li>SERVICIOS FINANCIEROS</li>
+            <li>WARRANTY EXTENSION</li>
+          </ul>
+        </div>
+        <div class="columna2">
+          <ul>
+            <li>DISEÑO</li>
+            <li>INNOVACIÓN Y EXCELENCIA</li>
+            <li>SOSTENIBILIDAD</li>
+            <li>HISTORIA</li>
+          </ul>
+        </div>
+        <div class="columna3">
+          <ul>
+            <li>PROGRAMAS DE PILOTAJE</li>
+            <li>LOUNGE</li>
+            <li>CLUB</li>
+            <li>NOTICIAS</li>
+            <li>PODCAST</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="submenu-general-contenedores">
+        <div class="submenu-general-contenedor">
+          <div class="languajes">
+            <p>IDIOMA</p>
+            <ul>
+              <li>ENGLISH</li>
+              <li>ITALIAN</li>
+              <li>FRENCH</li>
+              <li style="color: #9e9e9e">SPANISH</li>
+              <li>GERMAN</li>
+              <li>CHINESE</li>
+              <li>JAPANESE</li>
+              <li>RUSSIAN</li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu-general-contenedor">
+          <div class="redes-sociales">
+            <p>REDES SOCIALES</p>
+            <ul>
+              <li><a href="https://www.instagram.com/hondamotoses/" target="_blank"><img
+                src="/assets/images/logo-instagram.png" width="20px"></a></li>
+  
+          <li><a href="https://www.facebook.com/HondaMotosES/?locale=es_ES" target="_blank"><img
+                src="/assets/images/logo-facebook.png" width="20px"></a></li>
+  
+          <li><a href="https://www.youtube.com/@hondamotosespana" target="_blank"><img
+                src="/assets/images/logo-youtube.png" width="20px"></a></li>
+  
+          <li><a href="  https://twitter.com/HondaMotoES" target="_blank"><img src="/assets/images/logo-X.png"
+                width="20px"></a></li>
+          <li><a href="https://www.tiktok.com/@hondamotoses?lang=es" target="_blank"><img
+                src="/assets/images/logo-tiktok.png" width="20px"></a></li>
+  
+          <li><a href="https://www.linkedin.com/company/honda-espa%C3%B1a?originalSubdomain=es" target="_blank"><img
+                src="/assets/images/logo-linkedin.png" width="20px"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="submenu-general-contenedor">
+          <div class="ajustes">
+            <p>AJUSTES</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="hexagonCross-container" id="hexagonCrossContainer">
-      <img class="hexagonCrossFull" src="/assets/images/hexagonCrossFull.png" width="50px">
-    </div>
+    <main style="background-color: white">
+      <nav class="breadcrumb">
+        <ul>
+          <li><a href="/hondamotorsport.html">HOME</a></li>
+          <li>/</li>
+          <li>MODELOS</li>
+          <li>/</li>
+          <li>
+            <a href="/hondamotorsport/modelos/scooter.html">SCOOTER</a>
+          </li>
+          <li>/</li>
+          <li><b>FORZA 125</b></li>
+        </ul>
+      </nav>
+      <div class="modelo-main">
+        <video src="/assets/videos/Forza125.mp4" autoplay muted loop></video>
+        <div class="text-video">
+          <div class="text-video-sup">
+            <h2>NO RENUNCIES A NADA</h2>
+            <h1>Forza 125</h1>
+            <div class="hexagons">
+              <a href="#description">
+                <img
+                  class="hexagon-empty"
+                  src="/assets/images/hexagonoDownEmpty.png"
+                  width="70px"
+                />
+                <img
+                  class="hexagon-full"
+                  src="/assets/images/hexagonoDownFull.png"
+                  width="70px"
+                />
+              </a>
+              <div class="precio">
+                <p>Desde</p>
+                <span>5.350 €</span>
+              </div>
+            </div>
+          </div>
+          <div class="specs-video">
+            <div class="specs-video-left">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Potencia</td>
+                    <td>Velocidad máxima</td>
+                    <td>Cilindrada</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>15 CV</td>
+                    <td>90 km/h</td>
+                    <td>125 cc</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="specs-video-right">
+              <div class="vistas-modelos-hexagons">
+                <a href="#all-models" id="all-models-link">
+                  <img
+                    class="hexagon-empty"
+                    src="/assets/images/hexagonoEmpty.png"
+                    width="60px"
+                  />
+                  <img
+                    class="hexagon-full"
+                    src="/assets/images/hexagonoFull.png"
+                    width="60px"
+                  />
+                </a>
+              </div>
+              <div class="specs-configurador-txt">
+                <p>CONFIGURACIÓN</p>
+                <h2>Crea tu Forza</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modelo-trailer">
+        <a href="https://www.youtube.com/watch?v=bst0JvoMm3A" target="_blank"
+          ><video
+            id="videoPlayer"
+            src="/assets/videos/Forza350_01.mp4"
+            autoplay
+            muted
+            loop
+          ></video
+        ></a>
+      </div>
+      <div class="forza125-info" id="description">
+        <div class="modelo-info-txt">
+          <h1>VISIÓN GENERAL</h1>
+          <p>
+            La Honda Forza 125 es una scooter de gama media que combina estilo,
+            rendimiento y funcionalidad para ofrecer una experiencia de
+            conducción emocionante y cómoda en entornos urbanos y más allá. Con
+            un diseño elegante y aerodinámico, la Forza 125 es ideal para
+            aquellos que buscan un medio de transporte práctico y con estilo.
+            <br />
+            <br />
+            Equipada con un motor de 125 cc, la Forza 125 ofrece un equilibrio
+            impresionante entre potencia y eficiencia de combustible, lo que la
+            hace perfecta para desplazamientos diarios y aventuras urbanas. Su
+            transmisión automática proporciona cambios suaves y sin esfuerzo, lo
+            que simplifica la conducción y mejora la comodidad del piloto.
+          </p>
+        </div>
 
-    <div class="detailed-specs-container" id="detailedSpecsContainer">
-      <div class="detailed-specs">
-        <div class="detailed-specs-right">
+        <div class="modelo-info-txt02" style="margin-top: 50px">
+          <h1>ERGONOMÍA</h1>
+          <p>
+            La Honda Forza 125 ha sido diseñada pensando en la comodidad y la
+            facilidad de uso del piloto durante todo tipo de desplazamientos. Su
+            ergonomía se centra en ofrecer una posición de conducción natural y
+            relajada que reduce la fatiga y aumenta la comodidad en trayectos
+            largos y cortos.
+            <br />
+            <br />
+            El asiento de la Forza 125 es amplio y bien acolchado,
+            proporcionando un excelente apoyo para el piloto y el pasajero.
+            Además, su altura y forma permiten que pilotos de diferentes
+            estaturas puedan llegar fácilmente al suelo, lo que aumenta la
+            confianza y la seguridad al detenerse en semáforos o en situaciones
+            de tráfico.
+          </p>
+        </div>
+
+        <div class="modelo-info-txt03" style="margin-top: 50px">
+          <h1>CONDUCCIÓN</h1>
+          <p>
+            La Honda Forza 125 ofrece una experiencia de conducción ágil y
+            cómoda, perfecta para desplazamientos urbanos y aventuras en
+            carretera. Equipada con un motor de 125 cc, esta scooter proporciona
+            un rendimiento suave y eficiente, ideal para sortear el tráfico de
+            la ciudad y viajes de corta a media distancia.
+            <br />
+            <br />
+            Su chasis ligero y bien equilibrado, junto con una suspensión bien
+            ajustada, garantiza una conducción estable y cómoda en una variedad
+            de condiciones de la carretera. La dirección precisa y la
+            maniobrabilidad ágil hacen que la Forza 125 sea fácil de manejar,
+            incluso en espacios reducidos y en situaciones de tráfico intenso.
+          </p>
+        </div>
+      </div>
+      <div class="modelo-specs" id="revuelto-specs">
+        <div class="specs-container">
+          <h1>ESPECIFICACIONES TÉCNICAS</h1>
           <ul>
-            <h1>CONSUMO</h1>
-            <li>
-              <span class="span-left">CONSUMO COMBINADO *</span>
-              <span class="span-right">2,6 l/100km</span>
-            </li>
-            <li>
-              <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
-              <span class="span-right">57 g/km (WLTP)</span>
-            </li>
-
-            <h1>MOTOR</h1>
-            <li>
-              <span class="span-left">MOTOR DE COMBUSTIÓN INTERNA</span>
-              <span class="span-right">i1 1.25 l</span>
-            </li>
             <li>
               <span class="span-left">CILINDRADA</span>
-              <span class="span-right">129 cm³ (15,6 pulgadas cúbicas)</span>
-            </li>
-            <li>
-              <span class="span-left">RELACIÓN DE COMPRESIÓN</span>
-              <span class="span-right">11:1</span>
+              <span class="span-right">124.9 cm³</span>
             </li>
             <li>
               <span class="span-left">POTENCIA</span>
-              <span class="span-right">15 CV (22.6 kW) a 8,500 rpm</span>
+              <span class="span-right">15 CV (22.6 kW) a 4,500 rpm</span>
             </li>
-            <li>
-              <span class="span-left">PAR MÁXIMO</span>
-              <span class="span-right">23 Nm a 4250 rpm</span>
-            </li>
-            <li>
-              <span class="span-left">RELACIÓN PESO/POTENCIA</span>
-              <span class="span-right">0,38 CV/Kg</span>
-            </li>
-            <li>
-              <span class="span-left">SISTEMA DE REFRIGERACIÓN</span>
-              <span class="span-right">Refrigeración por líquido</span>
-            </li>
-            <li>
-              <span class="span-left">EMISIONES</span>
-              <span class="span-right">57 g/km de CO2</span>
-            </li>
-
-            <h1>TRANSIMISIÓN</h1>
-            <li>
-              <span class="span-left">TRANSMISIÓN</span>
-              <span class="span-right">CARDÁN</span>
-            </li>
-            <li>
-              <span class="span-left">CAJA DE CAMBIOS</span>
-              <span class="span-right">5 marchas</span>
-            </li>
-            <li>
-              <span class="span-left">EMBRAGUE</span>
-              <span class="span-right">Automático</span>
-            </li>
-
-            <h1>PRESTACIONES</h1>
             <li>
               <span class="span-left">VELOCIDAD MÁXIMA</span>
               <span class="span-right">90 km/h</span>
             </li>
-
-            <h1>CHASIS Y CARROCERÍA</h1>
             <li>
-              <span class="span-left">CHASIS</span>
-              <span class="span-right">Chasis de aluminio tubular</span>
+              <span class="span-left">CONSUMO COMBINADO</span>
+              <span class="span-right">2,6</span>
             </li>
             <li>
-              <span class="span-left">CARROCERÍA</span>
-              <span class="span-right">Diseño minimalista</span>
+              <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
+              <span class="span-right">57g/km</span>
             </li>
           </ul>
-
-        </div>
-        <div class="detailed-specs-right">
-          <ul>
-            <h1>RUEDAS</h1>
-            <li>
-              <span class="span-left">LLANTAS DELANTERAS</span>
-              <span class="span-right">15 x 3,5 pulgadas</span>
-            </li>
-            <li>
-              <span class="span-left">LLANTAS TRASERAS</span>
-              <span class="span-right">15 x 6 pulgadas</span>
-            </li>
-            <li>
-              <span class="span-left">NEUMÁTICOS DELANTEROS</span>
-              <span class="span-right">110/70 ZR15</span>
-            </li>
-            <li>
-              <span class="span-left">NEUMÁTICOS TRASEROS</span>
-              <span class="span-right">140/70 ZR15</span>
-            </li>
-
-            <h1>SUSPENSIONES Y DIRECCIÓN</h1>
-            <li>
-              <span class="span-left">SISTEMA DE CONTROL</span>
-              <span class="span-right">Sistema de frenos ABS</span>
-            </li>
-            <li>
-              <span class="span-left">TIPO DE SUSPENSIÓN</span>
-              <span class="span-right">Horquillas delanteras convencionales</span>
-            </li>
-            <li>
-              <span class="span-left">SISTEMA DE DIRECCIÓN</span>
-              <span class="span-right">Dirección precisa y ágil</span>
-            </li>
-
-            <h1>FRENOS</h1>
-            <li>
-              <span class="span-left">FRENOS</span>
-              <span class="span-right">Freno de disco con pinzas radiales</span>
-            </li>
-            <li>
-              <span class="span-left">FRENOS (DELANTEROS)</span>
-              <span class="span-right">Discos de freno de 220 mm</span>
-            </li>
-            <li>
-              <span class="span-left">FRENOS (TRASEROS)</span>
-              <span class="span-right">Discos de freno de 160 mm</span>
-            </li>
-
-
-            <h1>MEDIDAS</h1>
-            <li>
-              <span class="span-left">LONGITUD</span>
-              <span class="span-right">1900 mm</span>
-            </li>
-            <li>
-              <span class="span-left">ANCHURA</span>
-              <span class="span-right">700 mm</span>
-            </li>
-            <li>
-              <span class="span-left">ALTURA</span>
-              <span class="span-right">1500 mm</span>
-            </li>
-            <li>
-              <span class="span-left">PESO EN SECO</span>
-              <span class="span-right">150 kg</span>
-            </li>
-            <li>
-              <span class="span-left">DISTRIBUCIÓN DEL PESO</span>
-              <span class="span-right">% 50/50</span>
-            </li>
-
-          </ul>
-
-
+          <div class="button-more-specs">
+            <div class="descubreModelos">
+              <div class="moreinfo-container" id="moreInfoContainer">
+                <img
+                  class="moreinfo"
+                  src="/assets/images/moreinfoBlackEmpty.png"
+                  width="50px"
+                />
+                <img
+                  class="moreinfo-white"
+                  src="/assets/images/moreinfoBlackFull.png"
+                  width="50px"
+                />
+              </div>
+              <div class="descubreModelos-txt">
+                <h4>Ampliar todas las especificaciones técnicas</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <script>
-      var moreInfoContainer = document.getElementById("moreInfoContainer");
-
-      moreInfoContainer.addEventListener("click", function () {
-        var detailedSpecsContainer = document.getElementById("detailedSpecsContainer");
-        var hexagonCrossContainer = document.getElementById("hexagonCrossContainer");
-
-        // Oculta los elementos
-        detailedSpecsContainer.style.display = "block";
-        hexagonCrossContainer.style.display = "block";
-
-        // Realiza el desplazamiento suave hacia la posición del elemento
-        hexagonCrossContainer.scrollIntoView({ behavior: "smooth" });
-      });
-
-      var hexagonContainer = document.getElementById("hexagonCrossContainer");
-
-      hexagonContainer.addEventListener("click", function () {
-        var detailedSpecsContainer = document.getElementById("detailedSpecsContainer");
-        var hexagonCrossContainer = document.getElementById("hexagonCrossContainer");
-        var revueltoSpecs = document.getElementById("revuelto-specs");
-
-        // Oculta los elementos
-        detailedSpecsContainer.style.display = "none";
-        hexagonCrossContainer.style.display = "none";
-
-        // Realiza el desplazamiento suave hacia la posición del elemento
-        revueltoSpecs.scrollIntoView({ behavior: "smooth" });
-      });
-    </script>
-
-  </main>
-  <footer>
-    <div class="footer-contenedor">
-      <div class="footer-rrss">
-        <section>
-          <ul>
-            <li>EMPRESA</li>
-            <li>EMPLEO</li>
-            <li>SOSTENIBILIDAD</li>
-            <li>AVISO LEGAL Y PRIVACIDAD</li>
-            <li>MAPA DEL SITIO</li>
-            <li>ACCESIBILIDAD</li>
-            <li>FINACIALS</li>
-            <li>CONTACTO</li>
-            <li>MEDIA CENTERS</li>
-            <li>CONFIGURACIÓN DE COOKIES</li>
-            <li>NEWSLETTER</li>
-          </ul>
-        </section>
-        <aside>
-          <ul>
-            <li><a href="/https://www.instagram.com/hondamotoses/" target="_blank"><img
-                  src="/assets/images/logo-instagram.png" width="20px"></a></li>
-
-            <li><a href="/https://www.facebook.com/HondaMotosES/?locale=es_ES" target="_blank"><img
-                  src="/assets/images/logo-facebook.png" width="20px"></a></li>
-
-            <li><a href="/https://www.youtube.com/@hondamotosespana" target="_blank"><img
-                  src="/assets/images/logo-youtube.png" width="20px"></a></li>
-
-            <li><a href="/https://twitter.com/HondaMotoES" target="_blank"><img src="/assets/images/logo-X.png"
-                  width="20px"></a></li>
-            <li><a href="/https://www.tiktok.com/@hondamotoses?lang=es" target="_blank"><img
-                  src="/assets/images/logo-tiktok.png" width="20px"></a></li>
-
-            <li><a href="/https://www.linkedin.com/company/honda-espa%C3%B1a?originalSubdomain=es" target="_blank"><img
-                  src="/assets/images/logo-linkedin.png" width="20px"></a></li>
-          </ul>
-        </aside>
+      <div class="hexagonCross-container" id="hexagonCrossContainer">
+        <img
+          class="hexagonCrossFull"
+          src="/assets/images/hexagonCrossFull.png"
+          width="50px"
+        />
       </div>
-      <div class="condiciones">
-        <p class="footer-consumos">* Los valores de consumos y emisiones presentes en el sitio web se
-          refieren a
-          su IP geográfica. Dicho
-          valor podría diferir de la realidad si navega a través de una VPN o si la ubicación de su
-          proveedor
-          de Internet no es exacta. Si cree que no está geolocalizado correctamente, contacte con su
-          concesionario de referencia para obtener información válida en su territorio sobre consumos y
-          emisiones.</p>
-        <div class="footer-copyright">
-          <p>Copyright © 2023 Honda Motor</p>
+
+      <div class="detailed-specs-container" id="detailedSpecsContainer">
+        <div class="detailed-specs">
+          <div class="detailed-specs-right">
+            <ul>
+              <h1>CONSUMO</h1>
+              <li>
+                <span class="span-left">CONSUMO COMBINADO *</span>
+                <span class="span-right">2,6 l/100km</span>
+              </li>
+              <li>
+                <span class="span-left">EMISIONES DE CO2 COMBINADO *</span>
+                <span class="span-right">57 g/km (WLTP)</span>
+              </li>
+
+              <h1>MOTOR</h1>
+              <li>
+                <span class="span-left">MOTOR DE COMBUSTIÓN INTERNA</span>
+                <span class="span-right">i1 1.25 l</span>
+              </li>
+              <li>
+                <span class="span-left">CILINDRADA</span>
+                <span class="span-right">129 cm³ (15,6 pulgadas cúbicas)</span>
+              </li>
+              <li>
+                <span class="span-left">RELACIÓN DE COMPRESIÓN</span>
+                <span class="span-right">11:1</span>
+              </li>
+              <li>
+                <span class="span-left">POTENCIA</span>
+                <span class="span-right">15 CV (22.6 kW) a 8,500 rpm</span>
+              </li>
+              <li>
+                <span class="span-left">PAR MÁXIMO</span>
+                <span class="span-right">23 Nm a 4250 rpm</span>
+              </li>
+              <li>
+                <span class="span-left">RELACIÓN PESO/POTENCIA</span>
+                <span class="span-right">0,38 CV/Kg</span>
+              </li>
+              <li>
+                <span class="span-left">SISTEMA DE REFRIGERACIÓN</span>
+                <span class="span-right">Refrigeración por líquido</span>
+              </li>
+              <li>
+                <span class="span-left">EMISIONES</span>
+                <span class="span-right">57 g/km de CO2</span>
+              </li>
+
+              <h1>TRANSIMISIÓN</h1>
+              <li>
+                <span class="span-left">TRANSMISIÓN</span>
+                <span class="span-right">CARDÁN</span>
+              </li>
+              <li>
+                <span class="span-left">CAJA DE CAMBIOS</span>
+                <span class="span-right">5 marchas</span>
+              </li>
+              <li>
+                <span class="span-left">EMBRAGUE</span>
+                <span class="span-right">Automático</span>
+              </li>
+
+              <h1>PRESTACIONES</h1>
+              <li>
+                <span class="span-left">VELOCIDAD MÁXIMA</span>
+                <span class="span-right">90 km/h</span>
+              </li>
+
+              <h1>CHASIS Y CARROCERÍA</h1>
+              <li>
+                <span class="span-left">CHASIS</span>
+                <span class="span-right">Chasis de aluminio tubular</span>
+              </li>
+              <li>
+                <span class="span-left">CARROCERÍA</span>
+                <span class="span-right">Diseño minimalista</span>
+              </li>
+            </ul>
+          </div>
+          <div class="detailed-specs-right">
+            <ul>
+              <h1>RUEDAS</h1>
+              <li>
+                <span class="span-left">LLANTAS DELANTERAS</span>
+                <span class="span-right">15 x 3,5 pulgadas</span>
+              </li>
+              <li>
+                <span class="span-left">LLANTAS TRASERAS</span>
+                <span class="span-right">15 x 6 pulgadas</span>
+              </li>
+              <li>
+                <span class="span-left">NEUMÁTICOS DELANTEROS</span>
+                <span class="span-right">110/70 ZR15</span>
+              </li>
+              <li>
+                <span class="span-left">NEUMÁTICOS TRASEROS</span>
+                <span class="span-right">140/70 ZR15</span>
+              </li>
+
+              <h1>SUSPENSIONES Y DIRECCIÓN</h1>
+              <li>
+                <span class="span-left">SISTEMA DE CONTROL</span>
+                <span class="span-right">Sistema de frenos ABS</span>
+              </li>
+              <li>
+                <span class="span-left">TIPO DE SUSPENSIÓN</span>
+                <span class="span-right"
+                  >Horquillas delanteras convencionales</span
+                >
+              </li>
+              <li>
+                <span class="span-left">SISTEMA DE DIRECCIÓN</span>
+                <span class="span-right">Dirección precisa y ágil</span>
+              </li>
+
+              <h1>FRENOS</h1>
+              <li>
+                <span class="span-left">FRENOS</span>
+                <span class="span-right"
+                  >Freno de disco con pinzas radiales</span
+                >
+              </li>
+              <li>
+                <span class="span-left">FRENOS (DELANTEROS)</span>
+                <span class="span-right">Discos de freno de 220 mm</span>
+              </li>
+              <li>
+                <span class="span-left">FRENOS (TRASEROS)</span>
+                <span class="span-right">Discos de freno de 160 mm</span>
+              </li>
+
+              <h1>MEDIDAS</h1>
+              <li>
+                <span class="span-left">LONGITUD</span>
+                <span class="span-right">1900 mm</span>
+              </li>
+              <li>
+                <span class="span-left">ANCHURA</span>
+                <span class="span-right">700 mm</span>
+              </li>
+              <li>
+                <span class="span-left">ALTURA</span>
+                <span class="span-right">1500 mm</span>
+              </li>
+              <li>
+                <span class="span-left">PESO EN SECO</span>
+                <span class="span-right">150 kg</span>
+              </li>
+              <li>
+                <span class="span-left">DISTRIBUCIÓN DEL PESO</span>
+                <span class="span-right">% 50/50</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-</body>
+      <script>
+        var moreInfoContainer = document.getElementById("moreInfoContainer");
 
+        moreInfoContainer.addEventListener("click", function () {
+          var detailedSpecsContainer = document.getElementById(
+            "detailedSpecsContainer"
+          );
+          var hexagonCrossContainer = document.getElementById(
+            "hexagonCrossContainer"
+          );
+
+          // Oculta los elementos
+          detailedSpecsContainer.style.display = "block";
+          hexagonCrossContainer.style.display = "block";
+
+          // Realiza el desplazamiento suave hacia la posición del elemento
+          hexagonCrossContainer.scrollIntoView({ behavior: "smooth" });
+        });
+
+        var hexagonContainer = document.getElementById("hexagonCrossContainer");
+
+        hexagonContainer.addEventListener("click", function () {
+          var detailedSpecsContainer = document.getElementById(
+            "detailedSpecsContainer"
+          );
+          var hexagonCrossContainer = document.getElementById(
+            "hexagonCrossContainer"
+          );
+          var revueltoSpecs = document.getElementById("revuelto-specs");
+
+          // Oculta los elementos
+          detailedSpecsContainer.style.display = "none";
+          hexagonCrossContainer.style.display = "none";
+
+          // Realiza el desplazamiento suave hacia la posición del elemento
+          revueltoSpecs.scrollIntoView({ behavior: "smooth" });
+        });
+      </script>
+    </main>
+    <footer>
+      <div class="footer-contenedor">
+        <div class="footer-rrss">
+          <section>
+            <ul>
+              <li>EMPRESA</li>
+              <li>EMPLEO</li>
+              <li>SOSTENIBILIDAD</li>
+              <li>AVISO LEGAL Y PRIVACIDAD</li>
+              <li>MAPA DEL SITIO</li>
+              <li>ACCESIBILIDAD</li>
+              <li>FINACIALS</li>
+              <li>CONTACTO</li>
+              <li>MEDIA CENTERS</li>
+              <li>CONFIGURACIÓN DE COOKIES</li>
+              <li>NEWSLETTER</li>
+            </ul>
+          </section>
+          <aside>
+            <ul>
+              <li><a href="https://www.instagram.com/hondamotoses/" target="_blank"><img
+                src="/assets/images/logo-instagram.png" width="20px"></a></li>
+  
+          <li><a href="https://www.facebook.com/HondaMotosES/?locale=es_ES" target="_blank"><img
+                src="/assets/images/logo-facebook.png" width="20px"></a></li>
+  
+          <li><a href="https://www.youtube.com/@hondamotosespana" target="_blank"><img
+                src="/assets/images/logo-youtube.png" width="20px"></a></li>
+  
+          <li><a href="  https://twitter.com/HondaMotoES" target="_blank"><img src="/assets/images/logo-X.png"
+                width="20px"></a></li>
+          <li><a href="https://www.tiktok.com/@hondamotoses?lang=es" target="_blank"><img
+                src="/assets/images/logo-tiktok.png" width="20px"></a></li>
+  
+          <li><a href="https://www.linkedin.com/company/honda-espa%C3%B1a?originalSubdomain=es" target="_blank"><img
+                src="/assets/images/logo-linkedin.png" width="20px"></a></li>
+            </ul>
+          </aside>
+        </div>
+        <div class="condiciones">
+          <p class="footer-consumos">
+            * Los valores de consumos y emisiones presentes en el sitio web se
+            refieren a su IP geográfica. Dicho valor podría diferir de la
+            realidad si navega a través de una VPN o si la ubicación de su
+            proveedor de Internet no es exacta. Si cree que no está
+            geolocalizado correctamente, contacte con su concesionario de
+            referencia para obtener información válida en su territorio sobre
+            consumos y emisiones.
+          </p>
+          <div class="footer-copyright">
+            <p>Copyright © 2023 Honda Motor</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

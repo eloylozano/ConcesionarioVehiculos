@@ -725,6 +725,7 @@ main {
   transition: width 0.5s, background-color 0.5s;
 }
 
+
 .animated-link p::after {
   content: "";
   position: absolute;

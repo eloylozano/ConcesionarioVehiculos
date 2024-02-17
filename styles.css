@@ -664,7 +664,19 @@ main {
 .portada-contacto-maps{
   position: absolute;
   top: 50%;
-  right: 200px;
+  right: 100px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+
+.maps-container{
+  background: white;
+  height: 600px;
+  width: 1200px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
   transform: translateY(-50%);
   color: white;
 }

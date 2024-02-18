@@ -655,6 +655,12 @@ main {
   display: block;
 }
 
+.portada-contacto{
+  background-image: url(/assets/images/wallpaper-contacto.jpeg);
+  background-size: cover;
+  height: 100vh;
+}
+
 .portada-contacto-image {
   width: 100%;
   height: auto;
@@ -669,11 +675,33 @@ main {
   color: white;
 }
 
+.portada-contacto-info {
+  height: 100%;
+  color: #1f1f1f;
+  text-align: left;
+  display: flex;
+  margin-left: 400px;
+}
+
+.portada-contacto-info h1 {
+  padding-top: 60px;
+  margin: 0px;
+  font-size: 2em;
+  color: #1a1a1a;
+}
+
+.portada-contacto-info h2 {
+}
+
+.portada-contacto-info a{
+  text-decoration: none;
+  color: #1f1f1f;
+}
 
 .maps-container{
-  background: white;
+  background-image: url(assets/images/wallpaper-maps.png);
   height: 600px;
-  width: 1200px;
+  width: 1500px;
   position: absolute;
   top: 50%;
   right: 0px;

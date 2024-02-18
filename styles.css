@@ -690,12 +690,57 @@ main {
   color: #1a1a1a;
 }
 
-.portada-contacto-info h2 {
+.portada-contacto-info h2{
+  margin-top: 40px;
+  font-weight: 700;
 }
 
 .portada-contacto-info a{
   text-decoration: none;
   color: #1f1f1f;
+}
+
+
+.animated-link{
+}
+
+.animated-link a {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.animated-link p {
+  font-weight: 100;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid #c9c9c9;
+  color: #1a1a1a;
+  padding: 15px 0px;
+  margin: 0;
+  cursor: pointer;
+}
+
+.animated-link p::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #c9c9c9;
+  transition: width 0.5s, background-color 0.5s;
+}
+
+.animated-link p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transform: translateY(-1);
+  background-color: #1a1a1a;
+  transition: width 0.3s;
+}
+
+.animated-link p:hover::after {
+  width: 100%;
 }
 
 .maps-container{

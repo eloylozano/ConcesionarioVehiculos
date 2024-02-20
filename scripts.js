@@ -365,3 +365,4 @@ document.getElementById("all-models-link").addEventListener("click", function(ev
   // Realiza el desplazamiento suave hacia la posición del elemento
   allModelsElement.scrollIntoView({ behavior: "smooth" });
 });
+

@@ -216,9 +216,9 @@
           <form>
             <h3>BIENVENIDO</h3>
             <label for="">Correo Electrónico</label>
-            <input type="mail" required>
+            <input type="email" required>
             <label for="">Contraseña</label>
-            <input type="password" required>
+            <input type="password"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Debe contener al menos una mayúscula, una minúscula, un número y tener una longitud mínima de 8 caracteres" required>
             <div class="submit">
               <button type="submit">Inicia Sesión</button>
             </div>

@@ -365,15 +365,3 @@ document.getElementById("all-models-link").addEventListener("click", function(ev
   // Realiza el desplazamiento suave hacia la posición del elemento
   allModelsElement.scrollIntoView({ behavior: "smooth" });
 });
-
-const inputBoxes = document.querySelectorAll('.input-box');
-
-inputBoxes.forEach(inputBox => {
-  const input = inputBox.querySelector('input');
-  const label = inputBox.querySelector('label');
-
-  input.addEventListener('click', () => {
-    label.style.transform = 'translateY(-20px)';
-  });
-
-});

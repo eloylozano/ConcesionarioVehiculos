@@ -647,6 +647,7 @@ header {
 
 main {
   background: white;
+  overflow-x: hidden;
 }
 
 .portada-main video {
@@ -758,11 +759,25 @@ main {
   height: 100vh;
 }
 
+.login-pic01{
+  z-index: 5;
+  height: 450px;
+  transform: translateY(-150px);
+  left: -180px;
+  position: absolute;
+}
+
+.login-pic02{
+  z-index: 10;
+  height: 450px;
+  transform: translateY(220px);
+  position: relative;
+  left: 1380px;
+}
 
 .login-box {
   background-color: #f2f2f2;
   width: 450px; 
-  height: 500px; 
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -776,11 +791,30 @@ main {
   text-align: center;
 }
 
-.login-box label {
-  display: block;
-  margin-bottom: 10px;
+.inputbox label{
+  position: absolute;
+  transform: translateY(45px);
+  left: 735px;
+  color: #000;
   font-size: 1.2em;
-  font-weight: 100;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputbox input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding:0 35px 0 5px;
+  margin-top: 40px;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  transform: translateY(0px);
 }
 
 .login-box input {
@@ -812,7 +846,7 @@ main {
   font-weight: 600;
   margin-top: 10px;
   padding: 10px;
-  background-color: #ff0000;
+  background-color: #cc0000;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -831,28 +865,48 @@ main {
   height: 1px;
 }
 
-.login-box .other-login button:hover {
-  background-color: #3b3b3b;
-}
-
-.login-box .other-login {
-  text-align: center; 
-}
-
-.login-box .other-login button {
+.login-box .login-apple{
   width: 100%;
   height: 60px;
   font-size: 1.2em;
   font-weight: 600;
   padding: 0px;
-  background-color: #6a6a6a;
-  color: #fff;
+  background-color: #000000; 
+  color: #fff; 
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  line-height: 60px; 
 }
 
+.login-box .login-google {
+  width: 100%;
+  height: 60px;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 0px;
+  background-color: #fff; 
+  color: #000000;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  line-height: 60px; 
+}
 
+.login-box .login-apple:hover {
+  background-color: #3c3c3c;
+}
+
+.login-box .login-google:hover {
+  background-color: #cccccc;
+}
+
+.login-box .login-apple img,
+.login-box .login-google img {
+  width: 22px;
+  margin: 0 30px;
+  transform: translateY(5px);
+}
 
 .text-video {
   position: absolute;

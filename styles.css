@@ -756,15 +756,34 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: max-content;
   height: 100vh;
+}
+
+.login-box {
+  background-color: #f2f2f2;
+  width: 450px; 
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .login-pic01{
   z-index: 5;
   height: 450px;
-  transform: translateY(-150px);
   left: -180px;
+  transform: translateY(-150px);
   position: absolute;
+  animation: desplazar01 1.5s ease-out;
+}
+
+@keyframes desplazar01 {
+  0% {
+    left: 800px;
+  }
+  100% {
+    left: -180px;
+  }
 }
 
 .login-pic02{
@@ -773,28 +792,31 @@ main {
   transform: translateY(220px);
   position: relative;
   left: 1380px;
+  animation: desplazar02 1.5s ease-out;
 }
 
-.login-box {
-  background-color: #f2f2f2;
-  width: 450px; 
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+@keyframes desplazar02 {
+  0% {
+    left: 400px;
+  }
+  100% {
+    left: 1380px;
+  }
 }
+
 
 .login-box h3 {
   padding: 0;
   margin: 0;
   margin-bottom: 20px;
-  font-size: 2em;
+  font-size: 2.5em;
   text-align: center;
 }
 
 .inputbox label{
   position: absolute;
   transform: translateY(45px);
-  left: 735px;
+  left: 740px;
   color: #000;
   font-size: 1.2em;
   pointer-events: none;
@@ -825,6 +847,7 @@ input:valid ~ label{
   font-size: 1.2em;
   margin-bottom: 20px;
   border: 0px;
+  border-radius: 3px;
 }
 
 .login-box input:focus {
@@ -906,6 +929,19 @@ input:valid ~ label{
   width: 22px;
   margin: 0 30px;
   transform: translateY(5px);
+}
+
+.no-account{
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0px;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+.no-account a{
+  color: #3c3c3c;
+  font-weight: 500;
 }
 
 .text-video {

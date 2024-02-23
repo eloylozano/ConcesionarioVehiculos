@@ -267,6 +267,10 @@ header {
   color: #c0c0c0;
 }
 
+#header.submenu-active .nav-header-text a{
+  color: #c0c0c0;
+}
+
 #header.submenu-active .img img {
   filter: grayscale(100%);
 }

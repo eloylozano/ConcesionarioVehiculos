@@ -2,6 +2,11 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,7 +59,6 @@ header {
 
 .nav-header-text a{
   text-decoration: none;
-  color: whitesmoke;
   font-size: 1em;
 }
 
@@ -264,6 +268,10 @@ header {
 }
 
 #header.submenu-active .nav-header-text {
+  color: #c0c0c0;
+}
+
+#header.submenu-active .nav-header-text a{
   color: #c0c0c0;
 }
 
@@ -947,7 +955,28 @@ input:valid ~ label{
 .no-account a{
   color: #3c3c3c;
   font-weight: 500;
+  text-decoration: underline;
 }
+
+.already-signup{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.already-signup p{
+  font-size: 1em;
+  font-weight: 100;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.already-signup a{
+  color: #3c3c3c;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
 
 .text-video {
   position: absolute;

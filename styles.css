@@ -710,12 +710,17 @@ main {
 .animated-link p {
   font-weight: 100;
   position: relative;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid #c9c9c9;
   color: #1a1a1a;
   padding: 15px 0px;
   margin: 0;
   cursor: pointer;
+}
+
+.animated-link img{
+  padding: 0 10px;
 }
 
 .animated-link p::before {
@@ -766,7 +771,7 @@ main {
   width: 450px; 
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
 }
 
 .login-pic01{

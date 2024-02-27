@@ -1385,6 +1385,7 @@ body {
 
 .moreinfo-white {
   opacity: 0;
+  cursor: pointer;
 }
 
 .moreinfo-container:hover .moreinfo {
@@ -1411,6 +1412,7 @@ body {
 }
 
 .hexagonCross-container{
+  cursor: pointer;
   display: none;
   height: 50px;
   position: relative;

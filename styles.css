@@ -665,7 +665,7 @@ main {
 }
 
 .portada-contacto{
-  background-image: url(/assets/images/wallpaper-contacto.jpeg);
+  background-image: url(./assets/images/wallpaper-contacto.jpeg);
   background-size: cover;
   height: 100vh;
 }

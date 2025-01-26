@@ -654,42 +654,42 @@ body {
 }
 
 .main-scooter {
-  background-image: url(assets/images/wallpaperScooter.jpeg);
+  background-image: url("./assets/images/wallpaperScooter.jpeg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
 }
 
 .main-adventure {
-  background-image: url(assets/images/wallpaperAdventure.jpg);
+  background-image: url("./assets/images/wallpaperAdventure.jpg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
 }
 
 .main-custom {
-  background-image: url(assets/images/wallpaperCustom.jpg);
+  background-image: url("./assets/images/wallpaperCustom.jpg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
 }
 
 .main-touring {
-  background-image: url(assets/images/wallpaperTouring.jpg);
+  background-image: url("./assets/images/wallpaperTouring.jpg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
 }
 
 .main-street {
-  background-image: url(assets/images/wallpaperStreet01.jpg);
+  background-image: url("./assets/images/wallpaperStreet01.jpg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
 }
 
 .main-supersport {
-  background-image: url(assets/images/wallpaper02.jpg);
+  background-image: url("./assets/images/wallpaper02.jpg");
   background-size: cover;
   background-position-y: center ;
   height: 100vh;
@@ -822,7 +822,7 @@ body {
   height: 120vh;
   display: flex;
   align-items: center;
-  background-image: url(assets/images/BackgroundFireblade.png);
+  background-image: url("./assets/images/BackgroundFireblade.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -852,7 +852,7 @@ body {
   height: 120vh;
   display: flex;
   align-items: center;
-  background-image: url(assets/images/BackgroundCBR600RR.png);
+  background-image: url("./assets/images/BackgroundCBR600RR.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -888,7 +888,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(assets/images/BackgroundCBR650R.png);
+  background-image: url("./assets/images/BackgroundCBR650R.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -914,7 +914,7 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url(assets/images/BackgroundCBR500R.png);
+  background-image: url("./assets/images/BackgroundCBR500R.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1109,105 +1109,105 @@ body {
 }
 
 .pcx125-info {
-  background-image: url(assets/images/pcx125--text.jpg);
+  background-image: url("./assets/images/pcx125--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .forza125-info {
-  background-image: url(assets/images/forza125--text.jpg);
+  background-image: url("./assets/images/forza125--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .forza350-info {
-  background-image: url(assets/images/forza350--text.jpg);
+  background-image: url("./assets/images/forza350--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .adv350-info {
-  background-image: url(assets/images/adv350--text.jpg);
+  background-image: url("./assets/images/adv350--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .forza750-info {
-  background-image: url(assets/images/forza750--text.jpg);
+  background-image: url("./assets/images/forza750--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .cb500x-info {
-  background-image: url(assets/images/CB500x--text.jpg);
+  background-image: url("./assets/images/CB500x--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .NX500-info {
-  background-image: url(assets/images/NX500--text.jpg);
+  background-image: url("./assets/images/NX500--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .NC750X-info {
-  background-image: url(assets/images/NC750X--text.jpg);
+  background-image: url("./assets/images/NC750X--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .xadv-info {
-  background-image: url(assets/images/xadv--text.jpg);
+  background-image: url("./assets/images/xadv--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .xl750-info {
-  background-image: url(assets/images/xl750--text.jpg);
+  background-image: url("./assets/images/xl750--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .africatwin-info {
-  background-image: url(assets/images/AfricaTwin--text.jpg);
+  background-image: url("./assets/images/AfricaTwin--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CMX500-info {
-  background-image: url(assets/images/CMX500--text.jpg);
+  background-image: url("./assets/images/CMX500--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CMX1100-info {
-  background-image: url(assets/images/CMX1100--text.jpg);
+  background-image: url("./assets/images/CMX1100--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .NT1100-info {
-  background-image: url(assets/images/NT1100--text.jpg);
+  background-image: url("./assets/images/NT1100--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .GoldWing-info {
-  background-image: url(assets/images/GoldWing--text.jpg);
+  background-image: url("./assets/images/GoldWing--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
@@ -1215,70 +1215,70 @@ body {
 
 
 .CL500-info {
-  background-image: url(assets/images/CL500--text.jpg);
+  background-image: url("./assets/images/CL500--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CB500F-info {
-  background-image: url(assets/images/CB500F--text.jpg);
+  background-image: url("./assets/images/CB500F--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CB500-info {
-  background-image: url(assets/images/CB500--text.jpg);
+  background-image: url("./assets/images/CB500--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CB650R-info {
-  background-image: url(assets/images/CB650R--text.jpg);
+  background-image: url("./assets/images/CB650R--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CB750-info {
-  background-image: url(assets/images/CB750-text.jpg);
+  background-image: url("./assets/images/CB750-text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CB1000R-info {
-  background-image: url(assets/images/CB1000R--text.jpg);
+  background-image: url("./assets/images/CB1000R--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CBR500R-info {
-  background-image: url(assets/images/CBR500R--text.jpg);
+  background-image: url("./assets/images/CBR500R--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CBR600R-info {
-  background-image: url(assets/images/CBR600R--text.jpg);
+  background-image: url("./assets/images/CBR600R--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .CBR650R-info {
-  background-image: url(assets/images/CBR650R--text.jpg);
+  background-image: url("./assets/images/CBR650R--text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;
 }
 
 .modelo-info {
-  background-image: url(assets/images/modelo-text.jpg);
+  background-image: url("./assets/images/modelo-text.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 2834px;

@@ -1126,7 +1126,7 @@ input:valid ~ label{
 .configurador-main {
   position: relative;
   background-size: 100%;
-  background-image: url(assets/images/configuradorCBR1000RR.jpg);
+  background-image: url("./assets/images/cbr.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   height: 699px;

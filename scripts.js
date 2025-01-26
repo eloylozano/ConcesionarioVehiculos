@@ -308,17 +308,17 @@ function changeBackground(model, button) {
   switch (model) {
     case "CBR1000RR":
       configuradorMain.style.backgroundImage =
-        "url(./assets/images/configuradorCBR1000RR.jpg)";
+        "url(./assets/images/cbr.jpg)";
       updateH1Content("CBR1000RR");
       break;
     case "Africa Twin":
       configuradorMain.style.backgroundImage =
-        "url(./assets/images/configuradorafricatwin.jpg)";
+        "url(./assets/images/africa.jpg)";
       updateH1Content("Africa Twin");
       break;
     case "Gold Wing":
       configuradorMain.style.backgroundImage =
-        "url(./assets/images/configuradorgoldwing.jpg)";
+        "url(./assets/images/gold.jpg)";
       updateH1Content("Gold Wing");
       break;
     default:
